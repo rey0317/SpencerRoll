@@ -35,6 +35,9 @@ struct CameraView: View {
         .sheet(isPresented: $showQRCodeDetailView) {
             QRCodeDetailView(qrCode: scannedQRCode, metaData: metaData)
         }
+        .navigationBarItems(trailing: NavigationLink(destination: AllQRCodesView()) {
+            Text("View All")
+        })
     }
 }
 

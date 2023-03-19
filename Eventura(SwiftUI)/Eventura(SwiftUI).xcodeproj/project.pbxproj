@@ -11,6 +11,8 @@
 		7415827B29C799B4001B7AA6 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827A29C799B4001B7AA6 /* CameraViewModel.swift */; };
 		7415827D29C7A311001B7AA6 /* QRCodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827C29C7A311001B7AA6 /* QRCodeDetailView.swift */; };
 		7415827F29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827E29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift */; };
+		7415828329C7B068001B7AA6 /* AllQRCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415828229C7B068001B7AA6 /* AllQRCodesView.swift */; };
+		7415828529C7B382001B7AA6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415828429C7B382001B7AA6 /* MainView.swift */; };
 		DD75FBAA29C784C3006FB626 /* Eventura_SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBA929C784C3006FB626 /* Eventura_SwiftUI_App.swift */; };
 		DD75FBAC29C784C3006FB626 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBAB29C784C3006FB626 /* ContentView.swift */; };
 		DD75FBAE29C784C7006FB626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD75FBAD29C784C7006FB626 /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		7415827A29C799B4001B7AA6 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		7415827C29C7A311001B7AA6 /* QRCodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeDetailView.swift; sourceTree = "<group>"; };
 		7415827E29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerOverlay.swift; sourceTree = "<group>"; };
+		7415828229C7B068001B7AA6 /* AllQRCodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQRCodesView.swift; sourceTree = "<group>"; };
+		7415828429C7B382001B7AA6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DD75FBA629C784C3006FB626 /* Eventura(SwiftUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eventura(SwiftUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75FBA929C784C3006FB626 /* Eventura_SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventura_SwiftUI_App.swift; sourceTree = "<group>"; };
 		DD75FBAB29C784C3006FB626 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				DD75FBD729C78529006FB626 /* BiometricAuthenticationManager.swift */,
 				DD75FBD929C78858006FB626 /* LoginView.swift */,
 				7415827829C79683001B7AA6 /* CameraView.swift */,
+				7415828429C7B382001B7AA6 /* MainView.swift */,
+				7415828229C7B068001B7AA6 /* AllQRCodesView.swift */,
 				7415827E29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift */,
 				7415827C29C7A311001B7AA6 /* QRCodeDetailView.swift */,
 				7415827A29C799B4001B7AA6 /* CameraViewModel.swift */,
@@ -287,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7415827F29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift in Sources */,
+				7415828529C7B382001B7AA6 /* MainView.swift in Sources */,
 				DD75FBDA29C78858006FB626 /* LoginView.swift in Sources */,
+				7415828329C7B068001B7AA6 /* AllQRCodesView.swift in Sources */,
 				DD75FBD829C78529006FB626 /* BiometricAuthenticationManager.swift in Sources */,
 				DD75FBAC29C784C3006FB626 /* ContentView.swift in Sources */,
 				DD75FBDC29C7894C006FB626 /* SignUpView.swift in Sources */,
