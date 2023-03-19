@@ -14,6 +14,8 @@ struct LoginView: View {
     @State private var showErrorAlert: Bool = false
     @State private var errorTitle: String = ""
     @State private var errorMessage: String = ""
+    @State private var isLoginSuccessful = false
+    @State private var loginStatus: String? = nil
 
     private let authenticationManager = AuthenticationManager()
     private let biometricAuthenticationManager = BiometricAuthenticationManager()
@@ -41,10 +43,11 @@ struct LoginView: View {
             Button(action: {
                 if authenticationManager.loginUser(username: username, password: password) {
                     // Successfully logged in, proceed to the app
+                    loginStatus = "Login successful"
+                    isLoginSuccessful = true
                 } else {
-                    showErrorAlert = true
-                    errorTitle = "Login Failed"
-                    errorMessage = "Invalid username or password. Please try again."
+                    loginStatus = "Login failed"
+                    isLoginSuccessful = false
                 }
             }) {
                 Text("Log In")
@@ -62,10 +65,13 @@ struct LoginView: View {
                 biometricAuthenticationManager.authenticateUser { success, message in
                     if success {
                         // Successfully logged in using Face ID, proceed to the app
+                        loginStatus = "Login successful"
+                        isLoginSuccessful = true
                     } else {
                         showErrorAlert = true
                         errorTitle = "Face ID Authentication Failed"
                         errorMessage = message ?? "An error occurred. Please try again."
+                        loginStatus = "Login failed"
                     }
                 }
             }) {
@@ -82,14 +88,13 @@ struct LoginView: View {
             .alert(isPresented: $showErrorAlert, content: {
                 Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
             })
+            
+            if let status = loginStatus {
+                Text(status)
+                    .foregroundColor(isLoginSuccessful ? .green : .red)
+            }
 
             Spacer()
         }
-    }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
     }
 }
