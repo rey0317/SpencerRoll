@@ -1,62 +1,73 @@
-import Foundation
+import SwiftUI
+import Combine
 import AVFoundation
-import UIKit
 
 class CameraViewModel: NSObject, ObservableObject {
-    private(set) var session = AVCaptureSession()
-    private var captureDevice: AVCaptureDevice?
-    private var previewLayer: AVCaptureVideoPreviewLayer?
-    private var captureSessionOutput: AVCaptureMetadataOutput?
+    @Published var previewLayer: AVCaptureVideoPreviewLayer?
+    @Published var scannedCode: (message: String, metadata: [String])?
 
-    func startSession() {
-        DispatchQueue.main.async {
-            self.setupSession()
-            self.session.startRunning()
-        }
-    }
+    private let captureSession = AVCaptureSession()
+    private let metadataOutput = AVCaptureMetadataOutput()
 
-    func stopSession() {
-        DispatchQueue.main.async {
-            self.session.stopRunning()
-        }
+    override init() {
+        super.init()
+        setupSession()
     }
 
     private func setupSession() {
-        if let device = AVCaptureDevice.default(for: .video) {
-            captureDevice = device
-            do {
-                let input = try AVCaptureDeviceInput(device: device)
-                if session.canAddInput(input) {
-                    session.addInput(input)
-                }
+        guard let captureDevice = AVCaptureDevice.default(for: .video) else {
+            return
+        }
+        
+        do {
+            let deviceInput = try AVCaptureDeviceInput(device: captureDevice)
+            if captureSession.canAddInput(deviceInput) {
+                captureSession.addInput(deviceInput)
+            }
+            
+            if captureSession.canAddOutput(metadataOutput) {
+                captureSession.addOutput(metadataOutput)
+                metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+                metadataOutput.metadataObjectTypes = [.qr]
+            }
+            
+            let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+            previewLayer.videoGravity = .resizeAspectFill
+            self.previewLayer = previewLayer
+        } catch {
+            print("Error setting up the capture session: \(error)")
+        }
+    }
 
-                let output = AVCaptureMetadataOutput()
-                if session.canAddOutput(output) {
-                    session.addOutput(output)
-                    output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-                    output.metadataObjectTypes = [.qr]
-                }
-            } catch {
-                print("Error setting up the capture session: \(error)")
+    func startSession() {
+        if !captureSession.isRunning {
+            DispatchQueue.global(qos: .userInitiated).async {
+                self.captureSession.startRunning()
             }
         }
     }
 
-    func capture() {
-        print("Capture function called")
-        // Capture QR code and process it
+    func stopSession() {
+        if captureSession.isRunning {
+            DispatchQueue.global(qos: .userInitiated).async {
+                self.captureSession.stopRunning()
+            }
+        }
+    }
+
+    private func processQRCode(_ metadataObjects: [AVMetadataObject]) {
+        if let readableObject = metadataObjects.first as? AVMetadataMachineReadableCodeObject,
+           let stringValue = readableObject.stringValue {
+            let metadata = readableObject.type.rawValue
+            DispatchQueue.main.async {
+                self.scannedCode = (message: stringValue, metadata: [metadata])
+            }
+        }
     }
 }
 
 extension CameraViewModel: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        if let object = metadataObjects.first as? AVMetadataMachineReadableCodeObject, object.type == .qr, let stringValue = object.stringValue {
-            print("QR Code: \(stringValue)")
-
-            DispatchQueue.main.async {
-                self.session.stopRunning()
-                // Process the QR code, navigate to the success page, and pass the metadata
-            }
-        }
+        processQRCode(metadataObjects)
     }
 }

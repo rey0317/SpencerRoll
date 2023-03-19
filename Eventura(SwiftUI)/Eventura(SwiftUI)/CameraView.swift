@@ -2,43 +2,58 @@ import SwiftUI
 import AVFoundation
 
 struct CameraView: View {
-    @StateObject private var cameraViewModel = CameraViewModel()
+    @ObservedObject private var cameraViewModel = CameraViewModel()
+    
+    @State private var showQRCodeDetailView = false
+    @State private var scannedQRCode: String = ""
+    @State private var metaData: String = ""
     
     var body: some View {
         ZStack {
-            CameraPreview(session: cameraViewModel.session)
             VStack {
-                Spacer()
-                Button("Scan QR Code") {
-                    cameraViewModel.capture()
+                if let previewLayer = cameraViewModel.previewLayer {
+                    CameraPreviewView(previewLayer: previewLayer)
+                        .onAppear {
+                            cameraViewModel.startSession()
+                        }
+                        .onDisappear {
+                            cameraViewModel.stopSession()
+                        }
                 }
-                .padding()
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .clipShape(Capsule())
-                .padding()
             }
+            .ignoresSafeArea()
+            
+            QRCodeScannerOverlay()
         }
-        .onAppear {
-            cameraViewModel.startSession()
-        }
-        .onDisappear {
-            cameraViewModel.stopSession()
+        .onReceive(cameraViewModel.$scannedCode, perform: { scannedCode in
+            if let code = scannedCode {
+                scannedQRCode = code.message
+                metaData = code.metadata.joined(separator: "\n")
+                showQRCodeDetailView = true
+            }
+        })
+        .sheet(isPresented: $showQRCodeDetailView) {
+            QRCodeDetailView(qrCode: scannedQRCode, metaData: metaData)
         }
     }
 }
 
-struct CameraPreview: UIViewRepresentable {
-    let session: AVCaptureSession
-
+struct CameraPreviewView: UIViewRepresentable {
+    let previewLayer: AVCaptureVideoPreviewLayer
+    
     func makeUIView(context: Context) -> UIView {
-        let view = UIView(frame: UIScreen.main.bounds)
-        let previewLayer = AVCaptureVideoPreviewLayer(session: session)
-        previewLayer.videoGravity = .resizeAspectFill
-        previewLayer.frame = view.frame
+        let view = UIView()
+        previewLayer.frame = UIScreen.main.bounds
         view.layer.addSublayer(previewLayer)
         return view
     }
+    
+    func updateUIView(_ uiView: UIView, context: Context) {
+    }
+}
 
-    func updateUIView(_ uiView: UIView, context: Context) {}
+struct CameraView_Previews: PreviewProvider {
+    static var previews: some View {
+        CameraView()
+    }
 }
