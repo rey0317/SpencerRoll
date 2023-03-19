@@ -19,6 +19,8 @@
 		DD75FBD829C78529006FB626 /* BiometricAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBD729C78529006FB626 /* BiometricAuthenticationManager.swift */; };
 		DD75FBDA29C78858006FB626 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBD929C78858006FB626 /* LoginView.swift */; };
 		DD75FBDC29C7894C006FB626 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBDB29C7894C006FB626 /* SignUpView.swift */; };
+		DD75FBDF29C79C8D006FB626 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBDE29C79C8D006FB626 /* MainView.swift */; };
+		DD75FBE129C7B5AD006FB626 /* Token_Contract.sol in Resources */ = {isa = PBXBuildFile; fileRef = DD75FBE029C7B5AD006FB626 /* Token_Contract.sol */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		DD75FBD929C78858006FB626 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DD75FBDB29C7894C006FB626 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		DD75FBDD29C78D3F006FB626 /* Eventura-SwiftUI--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Eventura-SwiftUI--Info.plist"; sourceTree = SOURCE_ROOT; };
+		DD75FBDE29C79C8D006FB626 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DD75FBE029C7B5AD006FB626 /* Token_Contract.sol */ = {isa = PBXFileReference; lastKnownFileType = text; path = Token_Contract.sol; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				DD75FBD729C78529006FB626 /* BiometricAuthenticationManager.swift */,
 				DD75FBD929C78858006FB626 /* LoginView.swift */,
 				DD75FBDB29C7894C006FB626 /* SignUpView.swift */,
+				DD75FBDE29C79C8D006FB626 /* MainView.swift */,
+				DD75FBE029C7B5AD006FB626 /* Token_Contract.sol */,
 			);
 			path = "Eventura(SwiftUI)";
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD75FBE129C7B5AD006FB626 /* Token_Contract.sol in Resources */,
 				DD75FBB129C784C7006FB626 /* Preview Assets.xcassets in Resources */,
 				DD75FBAE29C784C7006FB626 /* Assets.xcassets in Resources */,
 			);
@@ -275,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD75FBDA29C78858006FB626 /* LoginView.swift in Sources */,
+				DD75FBDF29C79C8D006FB626 /* MainView.swift in Sources */,
 				DD75FBD829C78529006FB626 /* BiometricAuthenticationManager.swift in Sources */,
 				DD75FBAC29C784C3006FB626 /* ContentView.swift in Sources */,
 				DD75FBDC29C7894C006FB626 /* SignUpView.swift in Sources */,
