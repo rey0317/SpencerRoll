@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7415827929C79683001B7AA6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827829C79683001B7AA6 /* CameraView.swift */; };
+		7415827B29C799B4001B7AA6 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827A29C799B4001B7AA6 /* CameraViewModel.swift */; };
 		DD75FBAA29C784C3006FB626 /* Eventura_SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBA929C784C3006FB626 /* Eventura_SwiftUI_App.swift */; };
 		DD75FBAC29C784C3006FB626 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBAB29C784C3006FB626 /* ContentView.swift */; };
 		DD75FBAE29C784C7006FB626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD75FBAD29C784C7006FB626 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7415827829C79683001B7AA6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		7415827A29C799B4001B7AA6 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		DD75FBA629C784C3006FB626 /* Eventura(SwiftUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eventura(SwiftUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75FBA929C784C3006FB626 /* Eventura_SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventura_SwiftUI_App.swift; sourceTree = "<group>"; };
 		DD75FBAB29C784C3006FB626 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				DD75FBD529C7850D006FB626 /* AuthenticationManager.swift */,
 				DD75FBD729C78529006FB626 /* BiometricAuthenticationManager.swift */,
 				DD75FBD929C78858006FB626 /* LoginView.swift */,
+				7415827829C79683001B7AA6 /* CameraView.swift */,
+				7415827A29C799B4001B7AA6 /* CameraViewModel.swift */,
 				DD75FBDB29C7894C006FB626 /* SignUpView.swift */,
 			);
 			path = "Eventura(SwiftUI)";
@@ -279,8 +285,10 @@
 				DD75FBAC29C784C3006FB626 /* ContentView.swift in Sources */,
 				DD75FBDC29C7894C006FB626 /* SignUpView.swift in Sources */,
 				DD75FBD629C7850D006FB626 /* AuthenticationManager.swift in Sources */,
+				7415827B29C799B4001B7AA6 /* CameraViewModel.swift in Sources */,
 				DD75FBAA29C784C3006FB626 /* Eventura_SwiftUI_App.swift in Sources */,
 				DD75FBD429C784F3006FB626 /* User.swift in Sources */,
+				7415827929C79683001B7AA6 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,10 +447,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(SwiftUI)/Preview Content\"";
-				DEVELOPMENT_TEAM = 66P66L2U9P;
+				DEVELOPMENT_TEAM = AF2PS24USW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Eventura-SwiftUI--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "\"This app uses Face ID to securely log you in to your account.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -454,7 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-SwiftUI-";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.adalua.Eventura-SwiftUI-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,10 +480,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(SwiftUI)/Preview Content\"";
-				DEVELOPMENT_TEAM = 66P66L2U9P;
+				DEVELOPMENT_TEAM = AF2PS24USW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Eventura-SwiftUI--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "\"This app uses Face ID to securely log you in to your account.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -485,7 +497,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-SwiftUI-";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.adalua.Eventura-SwiftUI-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
