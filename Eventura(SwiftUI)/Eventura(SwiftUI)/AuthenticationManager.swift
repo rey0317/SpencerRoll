@@ -6,6 +6,7 @@ class AuthenticationManager: ObservableObject {
     @Published var username: String = ""
     @Published var walletAddress: String = ""
     @Published var privateKey: String = ""
+    @Published var user: User?
 
     func registerUser(username: String, password: String, walletAddress: String, privateKey: String) -> Bool {
         guard !username.isEmpty, !password.isEmpty else {
