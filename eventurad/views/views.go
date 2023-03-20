@@ -37,7 +37,7 @@ func New() {
     var err error
     const (
         psqlUser   = "a"
-        psqlPasswd = "aa"
+        psqlPasswd = "a"
         psqlDB     = "eventura"
     )
 
