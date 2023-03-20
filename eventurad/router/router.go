@@ -15,7 +15,7 @@ type Route struct {
 
 var routes = []Route {
     {"GET", "/getbooth/", views.GetBooth},
-    // {"POST", "/postuser/", views.PostChatt},
+    {"POST", "/postuser/", views.PostChatt},
 }
 
 func New() *atreugo.Atreugo {
