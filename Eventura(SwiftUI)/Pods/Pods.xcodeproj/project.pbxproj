@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080F6E47A0F6B7B391DC1A57845031B1 /* Pods-Eventura(SwiftUI)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE390454B7C05F4D884D5F87B2121D6 /* Pods-Eventura(SwiftUI)-dummy.m */; };
+		306EF5B05CC681D60CEE5E26623A2211 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAA3AE5C52FFDC25C98F829BDEE536CC /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A7B26525A40E0E4E076D162659FAD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		920C8B8FAF1298B215F07731D5F965E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B52CD0C5415D5346ED86BC456E14008C /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C7CF74FB817E2127DED1ABA0EB456 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-dummy.m */; };
+		B9B84330ADE2120FEE70DC62B0F3C3F2 /* Pods-Eventura(SwiftUI)Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED72475A6A40CFE48CFE1C9D0E99B4C6 /* Pods-Eventura(SwiftUI)Tests-dummy.m */; };
+		C9AD84E318D3EB57DD33FACBDAA96F02 /* Pods-Eventura(SwiftUI)Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEFF8F61A708AA322AA89FD2625C3816 /* Pods-Eventura(SwiftUI)Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62F3610D9E80DC8D90B25E6A6367627 /* Pods-Eventura(SwiftUI)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EF72CC81FB16C77C7EF8CB8288E7008 /* Pods-Eventura(SwiftUI)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD703FC1BF3A37D4FBA22B2B5D1D29AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A63851F3ECD29E60CB1DB2A43E2D0DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 734B58DCB30BEDAD41BED818B7A3D76A;
+			remoteInfo = "Pods-Eventura(SwiftUI)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07AC1D5F2F84AF1E218B9485E4B8BF61 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C4B14BB231B327532E1DA969DC56836 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0F36261DA4FB60541FF62BA1D55B8544 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		28FB76E22452E618510C39C223E7764F /* Pods-Eventura(SwiftUI)Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Eventura(SwiftUI)Tests.modulemap"; sourceTree = "<group>"; };
+		2EF72CC81FB16C77C7EF8CB8288E7008 /* Pods-Eventura(SwiftUI)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eventura(SwiftUI)-umbrella.h"; sourceTree = "<group>"; };
+		3E984476A6C8CDC4FE6E0D3174304201 /* Pods-Eventura(SwiftUI).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventura(SwiftUI).debug.xcconfig"; sourceTree = "<group>"; };
+		4594C1FD3841C60DFE243E9BCF55B162 /* Pods-Eventura(SwiftUI)Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventura(SwiftUI)Tests-Info.plist"; sourceTree = "<group>"; };
+		61E62250743FE71C38B0A4027E254ED1 /* Pods-Eventura(SwiftUI) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Eventura(SwiftUI)"; path = Pods_Eventura_SwiftUI_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FF9BC9DC13DDEBFD7BA111312AE3C2 /* Pods-Eventura(SwiftUI)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventura(SwiftUI)-Info.plist"; sourceTree = "<group>"; };
+		643C8FAE0379078A0BBFDA7C5B617CEE /* Pods-Eventura(SwiftUI)Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Eventura(SwiftUI)Tests"; path = Pods_Eventura_SwiftUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7CE390454B7C05F4D884D5F87B2121D6 /* Pods-Eventura(SwiftUI)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eventura(SwiftUI)-dummy.m"; sourceTree = "<group>"; };
+		7D84E230E21DE4F7C104A5E0CAF08A4C /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-Info.plist"; sourceTree = "<group>"; };
+		83CFF380E8F96E7D4B815991F3C65955 /* Pods-Eventura(SwiftUI)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventura(SwiftUI)-acknowledgements.plist"; sourceTree = "<group>"; };
+		855C7CF74FB817E2127DED1ABA0EB456 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-dummy.m"; sourceTree = "<group>"; };
+		915676914B188E2652AB0090257CB3FE /* Pods-Eventura(SwiftUI)Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eventura(SwiftUI)Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2387D55D603C61B3C126D8EDBA6FFE9 /* Pods-Eventura(SwiftUI)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventura(SwiftUI)Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AF525FE69BA5F55009CE2019DB39C9C2 /* Pods-Eventura(SwiftUI)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventura(SwiftUI)Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA7FDE2801DD76599C2E521AB0EDF6D2 /* Pods-Eventura(SwiftUI).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Eventura(SwiftUI).modulemap"; sourceTree = "<group>"; };
+		D4DB372ED4EA9C7131D9B33DB1F987AC /* Pods-Eventura(SwiftUI)Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventura(SwiftUI)Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8141E72EFB7A4BBD0244B73FA1DF0C0 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		DEFF8F61A708AA322AA89FD2625C3816 /* Pods-Eventura(SwiftUI)Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eventura(SwiftUI)Tests-umbrella.h"; sourceTree = "<group>"; };
+		E16B52D2C4C25F5B0726907ACDB513D4 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests"; path = Pods_Eventura_SwiftUI__Eventura_SwiftUI_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82663DCCF6979BB01F71435CF6958D9 /* Pods-Eventura(SwiftUI)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eventura(SwiftUI)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EACFE5B97778500F0237B99E1FF0AD73 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.modulemap"; sourceTree = "<group>"; };
+		ED72475A6A40CFE48CFE1C9D0E99B4C6 /* Pods-Eventura(SwiftUI)Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eventura(SwiftUI)Tests-dummy.m"; sourceTree = "<group>"; };
+		F48F94DBA742D3A8FF9BEEE4D656847F /* Pods-Eventura(SwiftUI).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventura(SwiftUI).release.xcconfig"; sourceTree = "<group>"; };
+		FAA3AE5C52FFDC25C98F829BDEE536CC /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E3D84E835F232CE5B653E5702E78CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD703FC1BF3A37D4FBA22B2B5D1D29AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671132DE79EACC133B37AA8F7A0FB3A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920C8B8FAF1298B215F07731D5F965E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23B42654FC65C6ED245D9E78BAF0FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A7B26525A40E0E4E076D162659FAD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3429BEF29F7C8C7C068B43D7EA12D8 /* Pods-Eventura(SwiftUI)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				28FB76E22452E618510C39C223E7764F /* Pods-Eventura(SwiftUI)Tests.modulemap */,
+				915676914B188E2652AB0090257CB3FE /* Pods-Eventura(SwiftUI)Tests-acknowledgements.markdown */,
+				D4DB372ED4EA9C7131D9B33DB1F987AC /* Pods-Eventura(SwiftUI)Tests-acknowledgements.plist */,
+				ED72475A6A40CFE48CFE1C9D0E99B4C6 /* Pods-Eventura(SwiftUI)Tests-dummy.m */,
+				4594C1FD3841C60DFE243E9BCF55B162 /* Pods-Eventura(SwiftUI)Tests-Info.plist */,
+				DEFF8F61A708AA322AA89FD2625C3816 /* Pods-Eventura(SwiftUI)Tests-umbrella.h */,
+				AF525FE69BA5F55009CE2019DB39C9C2 /* Pods-Eventura(SwiftUI)Tests.debug.xcconfig */,
+				A2387D55D603C61B3C126D8EDBA6FFE9 /* Pods-Eventura(SwiftUI)Tests.release.xcconfig */,
+			);
+			name = "Pods-Eventura(SwiftUI)Tests";
+			path = "Target Support Files/Pods-Eventura(SwiftUI)Tests";
+			sourceTree = "<group>";
+		};
+		434C547B55E1A7EF0C29F83862091FEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61E62250743FE71C38B0A4027E254ED1 /* Pods-Eventura(SwiftUI) */,
+				E16B52D2C4C25F5B0726907ACDB513D4 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests */,
+				643C8FAE0379078A0BBFDA7C5B617CEE /* Pods-Eventura(SwiftUI)Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6B97ED26EE145FD1F43515E781B0A9E3 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EACFE5B97778500F0237B99E1FF0AD73 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.modulemap */,
+				0F36261DA4FB60541FF62BA1D55B8544 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-acknowledgements.markdown */,
+				0C4B14BB231B327532E1DA969DC56836 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-acknowledgements.plist */,
+				855C7CF74FB817E2127DED1ABA0EB456 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-dummy.m */,
+				7D84E230E21DE4F7C104A5E0CAF08A4C /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-Info.plist */,
+				FAA3AE5C52FFDC25C98F829BDEE536CC /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-umbrella.h */,
+				07AC1D5F2F84AF1E218B9485E4B8BF61 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig */,
+				D8141E72EFB7A4BBD0244B73FA1DF0C0 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig */,
+			);
+			name = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests";
+			path = "Target Support Files/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests";
+			sourceTree = "<group>";
+		};
+		7576E32E5D335B49E3EE4DE5401E6807 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A780DE88D8061BEC4EF8E4B66FF050EB /* Pods-Eventura(SwiftUI) */,
+				6B97ED26EE145FD1F43515E781B0A9E3 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests */,
+				1A3429BEF29F7C8C7C068B43D7EA12D8 /* Pods-Eventura(SwiftUI)Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A780DE88D8061BEC4EF8E4B66FF050EB /* Pods-Eventura(SwiftUI) */ = {
+			isa = PBXGroup;
+			children = (
+				CA7FDE2801DD76599C2E521AB0EDF6D2 /* Pods-Eventura(SwiftUI).modulemap */,
+				E82663DCCF6979BB01F71435CF6958D9 /* Pods-Eventura(SwiftUI)-acknowledgements.markdown */,
+				83CFF380E8F96E7D4B815991F3C65955 /* Pods-Eventura(SwiftUI)-acknowledgements.plist */,
+				7CE390454B7C05F4D884D5F87B2121D6 /* Pods-Eventura(SwiftUI)-dummy.m */,
+				63FF9BC9DC13DDEBFD7BA111312AE3C2 /* Pods-Eventura(SwiftUI)-Info.plist */,
+				2EF72CC81FB16C77C7EF8CB8288E7008 /* Pods-Eventura(SwiftUI)-umbrella.h */,
+				3E984476A6C8CDC4FE6E0D3174304201 /* Pods-Eventura(SwiftUI).debug.xcconfig */,
+				F48F94DBA742D3A8FF9BEEE4D656847F /* Pods-Eventura(SwiftUI).release.xcconfig */,
+			);
+			name = "Pods-Eventura(SwiftUI)";
+			path = "Target Support Files/Pods-Eventura(SwiftUI)";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				434C547B55E1A7EF0C29F83862091FEE /* Products */,
+				7576E32E5D335B49E3EE4DE5401E6807 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65C2663766306CAA8F8CB291968101B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AD84E318D3EB57DD33FACBDAA96F02 /* Pods-Eventura(SwiftUI)Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04C0119D05DBB2E9A7449067BF4E59D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306EF5B05CC681D60CEE5E26623A2211 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FB1EAE86912AD886DFB9BFB445049D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E62F3610D9E80DC8D90B25E6A6367627 /* Pods-Eventura(SwiftUI)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D3772366CE59BE491FDBBFB2214BAEA /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429DC86100A5B74A186AC0D3523DE4E4 /* Build configuration list for PBXNativeTarget "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests" */;
+			buildPhases = (
+				E04C0119D05DBB2E9A7449067BF4E59D /* Headers */,
+				61B20F82A82274549A378496263D22BC /* Sources */,
+				671132DE79EACC133B37AA8F7A0FB3A6 /* Frameworks */,
+				306C5FB62317D58B4F6596F624E716A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests";
+			productName = Pods_Eventura_SwiftUI__Eventura_SwiftUI_UITests;
+			productReference = E16B52D2C4C25F5B0726907ACDB513D4 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		734B58DCB30BEDAD41BED818B7A3D76A /* Pods-Eventura(SwiftUI) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1724ADCB0F2EC229CFD20158DE3E6C9 /* Build configuration list for PBXNativeTarget "Pods-Eventura(SwiftUI)" */;
+			buildPhases = (
+				F5FB1EAE86912AD886DFB9BFB445049D /* Headers */,
+				1DCD068DE2B3EA73E2EAC74853F9B6C4 /* Sources */,
+				E23B42654FC65C6ED245D9E78BAF0FBC /* Frameworks */,
+				2F59D8B2604506CE3DF5C5A68FF131A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Eventura(SwiftUI)";
+			productName = Pods_Eventura_SwiftUI_;
+			productReference = 61E62250743FE71C38B0A4027E254ED1 /* Pods-Eventura(SwiftUI) */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB8A325CF7A2CC5E1E30809AB8F9DE8C /* Pods-Eventura(SwiftUI)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64D72651E452A2BDA7367C64073CD9B /* Build configuration list for PBXNativeTarget "Pods-Eventura(SwiftUI)Tests" */;
+			buildPhases = (
+				65C2663766306CAA8F8CB291968101B8 /* Headers */,
+				0BA13E8C3C03645FCD4E31F369615099 /* Sources */,
+				5E3D84E835F232CE5B653E5702E78CD8 /* Frameworks */,
+				A593CF010DEB5AE255F0006B0348EC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EBAFFE0D109BF181C25C189DF941054 /* PBXTargetDependency */,
+			);
+			name = "Pods-Eventura(SwiftUI)Tests";
+			productName = Pods_Eventura_SwiftUI_Tests;
+			productReference = 643C8FAE0379078A0BBFDA7C5B617CEE /* Pods-Eventura(SwiftUI)Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 434C547B55E1A7EF0C29F83862091FEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				734B58DCB30BEDAD41BED818B7A3D76A /* Pods-Eventura(SwiftUI) */,
+				4D3772366CE59BE491FDBBFB2214BAEA /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests */,
+				CB8A325CF7A2CC5E1E30809AB8F9DE8C /* Pods-Eventura(SwiftUI)Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F59D8B2604506CE3DF5C5A68FF131A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306C5FB62317D58B4F6596F624E716A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A593CF010DEB5AE255F0006B0348EC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BA13E8C3C03645FCD4E31F369615099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B84330ADE2120FEE70DC62B0F3C3F2 /* Pods-Eventura(SwiftUI)Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DCD068DE2B3EA73E2EAC74853F9B6C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080F6E47A0F6B7B391DC1A57845031B1 /* Pods-Eventura(SwiftUI)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61B20F82A82274549A378496263D22BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52CD0C5415D5346ED86BC456E14008C /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EBAFFE0D109BF181C25C189DF941054 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Eventura(SwiftUI)";
+			target = 734B58DCB30BEDAD41BED818B7A3D76A /* Pods-Eventura(SwiftUI) */;
+			targetProxy = A63851F3ECD29E60CB1DB2A43E2D0DAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34AA734C03BC1A297DE95827459AA8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2387D55D603C61B3C126D8EDBA6FFE9 /* Pods-Eventura(SwiftUI)Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventura(SwiftUI)Tests/Pods-Eventura(SwiftUI)Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventura(SwiftUI)Tests/Pods-Eventura(SwiftUI)Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		44F88EED2462E09792B5102CC44EA42B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E984476A6C8CDC4FE6E0D3174304201 /* Pods-Eventura(SwiftUI).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventura(SwiftUI)/Pods-Eventura(SwiftUI)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventura(SwiftUI)/Pods-Eventura(SwiftUI).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C78A09042E6913D15B6AB2D968ED2C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF525FE69BA5F55009CE2019DB39C9C2 /* Pods-Eventura(SwiftUI)Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventura(SwiftUI)Tests/Pods-Eventura(SwiftUI)Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventura(SwiftUI)Tests/Pods-Eventura(SwiftUI)Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AA483CE201CC8FF0579E55ADAA957449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F48F94DBA742D3A8FF9BEEE4D656847F /* Pods-Eventura(SwiftUI).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventura(SwiftUI)/Pods-Eventura(SwiftUI)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventura(SwiftUI)/Pods-Eventura(SwiftUI).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE0D3C217DC925590492EADCD29BFA85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07AC1D5F2F84AF1E218B9485E4B8BF61 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCB7808AF0D710315B455D691CEE4C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8141E72EFB7A4BBD0244B73FA1DF0C0 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		429DC86100A5B74A186AC0D3523DE4E4 /* Build configuration list for PBXNativeTarget "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0D3C217DC925590492EADCD29BFA85 /* Debug */,
+				DCB7808AF0D710315B455D691CEE4C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */,
+				5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1724ADCB0F2EC229CFD20158DE3E6C9 /* Build configuration list for PBXNativeTarget "Pods-Eventura(SwiftUI)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F88EED2462E09792B5102CC44EA42B /* Debug */,
+				AA483CE201CC8FF0579E55ADAA957449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64D72651E452A2BDA7367C64073CD9B /* Build configuration list for PBXNativeTarget "Pods-Eventura(SwiftUI)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C78A09042E6913D15B6AB2D968ED2C1 /* Debug */,
+				34AA734C03BC1A297DE95827459AA8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5491C0438860ECFD33693EB6 /* Pods_Eventura_SwiftUI_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56426E6D2DB55E3315029DFD /* Pods_Eventura_SwiftUI_.framework */; };
+		62686B252D8527C8BC692AB9 /* Pods_Eventura_SwiftUI__Eventura_SwiftUI_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6ED9A929017124E8E433F1 /* Pods_Eventura_SwiftUI__Eventura_SwiftUI_UITests.framework */; };
 		7415827929C79683001B7AA6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827829C79683001B7AA6 /* CameraView.swift */; };
 		7415827B29C799B4001B7AA6 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827A29C799B4001B7AA6 /* CameraViewModel.swift */; };
 		7415827D29C7A311001B7AA6 /* QRCodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827C29C7A311001B7AA6 /* QRCodeDetailView.swift */; };
 		7415827F29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415827E29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift */; };
+		7415828729C7B897001B7AA6 /* AllQRCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415828629C7B897001B7AA6 /* AllQRCodesView.swift */; };
+		78A4CF34E97D012C72B94A66 /* Pods_Eventura_SwiftUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A9893DEA9C93BAD77962F7 /* Pods_Eventura_SwiftUI_Tests.framework */; };
 		DD75FBAA29C784C3006FB626 /* Eventura_SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBA929C784C3006FB626 /* Eventura_SwiftUI_App.swift */; };
 		DD75FBAC29C784C3006FB626 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBAB29C784C3006FB626 /* ContentView.swift */; };
 		DD75FBAE29C784C7006FB626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD75FBAD29C784C7006FB626 /* Assets.xcassets */; };
@@ -25,6 +29,9 @@
 		DD75FBDC29C7894C006FB626 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBDB29C7894C006FB626 /* SignUpView.swift */; };
 		DD75FBDF29C79C8D006FB626 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBDE29C79C8D006FB626 /* MainView.swift */; };
 		DD75FBE129C7B5AD006FB626 /* Token_Contract.sol in Resources */ = {isa = PBXBuildFile; fileRef = DD75FBE029C7B5AD006FB626 /* Token_Contract.sol */; };
+		DD75FBE329C7F8F6006FB626 /* MintNFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FBE229C7F8F6006FB626 /* MintNFT.swift */; };
+		DD75FBE729C7FC17006FB626 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = DD75FBE629C7FC17006FB626 /* Algorithms */; };
+		DD75FBF529C815C1006FB626 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = DD75FBF429C815C1006FB626 /* web3swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +52,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A9893DEA9C93BAD77962F7 /* Pods_Eventura_SwiftUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_SwiftUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6ED9A929017124E8E433F1 /* Pods_Eventura_SwiftUI__Eventura_SwiftUI_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_SwiftUI__Eventura_SwiftUI_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B1E252F60A5BC622BC8404 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig"; path = "Target Support Files/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A2EE600282F7DE8792C079E /* Pods-Eventura(SwiftUI).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(SwiftUI).release.xcconfig"; path = "Target Support Files/Pods-Eventura(SwiftUI)/Pods-Eventura(SwiftUI).release.xcconfig"; sourceTree = "<group>"; };
+		26574A6E15A9F60D71BBF0F5 /* Pods-Eventura(SwiftUI)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(SwiftUI)Tests.release.xcconfig"; path = "Target Support Files/Pods-Eventura(SwiftUI)Tests/Pods-Eventura(SwiftUI)Tests.release.xcconfig"; sourceTree = "<group>"; };
+		56426E6D2DB55E3315029DFD /* Pods_Eventura_SwiftUI_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_SwiftUI_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D31A3473086D8C661C5B04C /* Pods-Eventura(SwiftUI)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(SwiftUI)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Eventura(SwiftUI)Tests/Pods-Eventura(SwiftUI)Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7415827829C79683001B7AA6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		7415827A29C799B4001B7AA6 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		7415827C29C7A311001B7AA6 /* QRCodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeDetailView.swift; sourceTree = "<group>"; };
 		7415827E29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerOverlay.swift; sourceTree = "<group>"; };
+		7415828629C7B897001B7AA6 /* AllQRCodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQRCodesView.swift; sourceTree = "<group>"; };
+		773D84B42D7B68A78C458496 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig"; path = "Target Support Files/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFA99B20EDC09FA34492266E /* Pods-Eventura(SwiftUI).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(SwiftUI).debug.xcconfig"; path = "Target Support Files/Pods-Eventura(SwiftUI)/Pods-Eventura(SwiftUI).debug.xcconfig"; sourceTree = "<group>"; };
 		DD75FBA629C784C3006FB626 /* Eventura(SwiftUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eventura(SwiftUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75FBA929C784C3006FB626 /* Eventura_SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventura_SwiftUI_App.swift; sourceTree = "<group>"; };
 		DD75FBAB29C784C3006FB626 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +84,7 @@
 		DD75FBDD29C78D3F006FB626 /* Eventura-SwiftUI--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Eventura-SwiftUI--Info.plist"; sourceTree = SOURCE_ROOT; };
 		DD75FBDE29C79C8D006FB626 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DD75FBE029C7B5AD006FB626 /* Token_Contract.sol */ = {isa = PBXFileReference; lastKnownFileType = text; path = Token_Contract.sol; sourceTree = "<group>"; };
+		DD75FBE229C7F8F6006FB626 /* MintNFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintNFT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD75FBE729C7FC17006FB626 /* Algorithms in Frameworks */,
+				5491C0438860ECFD33693EB6 /* Pods_Eventura_SwiftUI_.framework in Frameworks */,
+				DD75FBF529C815C1006FB626 /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A4CF34E97D012C72B94A66 /* Pods_Eventura_SwiftUI_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +110,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62686B252D8527C8BC692AB9 /* Pods_Eventura_SwiftUI__Eventura_SwiftUI_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21EF9E87FAD5CC317BD87A38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFA99B20EDC09FA34492266E /* Pods-Eventura(SwiftUI).debug.xcconfig */,
+				1A2EE600282F7DE8792C079E /* Pods-Eventura(SwiftUI).release.xcconfig */,
+				773D84B42D7B68A78C458496 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig */,
+				12B1E252F60A5BC622BC8404 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig */,
+				5D31A3473086D8C661C5B04C /* Pods-Eventura(SwiftUI)Tests.debug.xcconfig */,
+				26574A6E15A9F60D71BBF0F5 /* Pods-Eventura(SwiftUI)Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BCA131E1D1374615AF6F4215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56426E6D2DB55E3315029DFD /* Pods_Eventura_SwiftUI_.framework */,
+				0F6ED9A929017124E8E433F1 /* Pods_Eventura_SwiftUI__Eventura_SwiftUI_UITests.framework */,
+				00A9893DEA9C93BAD77962F7 /* Pods_Eventura_SwiftUI_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD75FB9D29C784C3006FB626 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +147,8 @@
 				DD75FBB929C784C7006FB626 /* Eventura(SwiftUI)Tests */,
 				DD75FBC329C784C7006FB626 /* Eventura(SwiftUI)UITests */,
 				DD75FBA729C784C3006FB626 /* Products */,
+				21EF9E87FAD5CC317BD87A38 /* Pods */,
+				BCA131E1D1374615AF6F4215 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,12 +175,14 @@
 				DD75FBD729C78529006FB626 /* BiometricAuthenticationManager.swift */,
 				DD75FBD929C78858006FB626 /* LoginView.swift */,
 				7415827829C79683001B7AA6 /* CameraView.swift */,
+				7415828629C7B897001B7AA6 /* AllQRCodesView.swift */,
 				7415827E29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift */,
 				7415827C29C7A311001B7AA6 /* QRCodeDetailView.swift */,
 				7415827A29C799B4001B7AA6 /* CameraViewModel.swift */,
 				DD75FBDB29C7894C006FB626 /* SignUpView.swift */,
 				DD75FBDE29C79C8D006FB626 /* MainView.swift */,
 				DD75FBE029C7B5AD006FB626 /* Token_Contract.sol */,
+				DD75FBE229C7F8F6006FB626 /* MintNFT.swift */,
 			);
 			path = "Eventura(SwiftUI)";
 			sourceTree = "<group>";
@@ -169,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD75FBCA29C784C7006FB626 /* Build configuration list for PBXNativeTarget "Eventura(SwiftUI)" */;
 			buildPhases = (
+				C7BED17BBB1B460D00977A98 /* [CP] Check Pods Manifest.lock */,
 				DD75FBA229C784C3006FB626 /* Sources */,
 				DD75FBA329C784C3006FB626 /* Frameworks */,
 				DD75FBA429C784C3006FB626 /* Resources */,
@@ -178,6 +229,10 @@
 			dependencies = (
 			);
 			name = "Eventura(SwiftUI)";
+			packageProductDependencies = (
+				DD75FBE629C7FC17006FB626 /* Algorithms */,
+				DD75FBF429C815C1006FB626 /* web3swift */,
+			);
 			productName = "Eventura(SwiftUI)";
 			productReference = DD75FBA629C784C3006FB626 /* Eventura(SwiftUI).app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD75FBCD29C784C7006FB626 /* Build configuration list for PBXNativeTarget "Eventura(SwiftUI)Tests" */;
 			buildPhases = (
+				279A4E41161534DEE8B5581A /* [CP] Check Pods Manifest.lock */,
 				DD75FBB229C784C7006FB626 /* Sources */,
 				DD75FBB329C784C7006FB626 /* Frameworks */,
 				DD75FBB429C784C7006FB626 /* Resources */,
@@ -204,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD75FBD029C784C7006FB626 /* Build configuration list for PBXNativeTarget "Eventura(SwiftUI)UITests" */;
 			buildPhases = (
+				7831067D962242A86AAA427E /* [CP] Check Pods Manifest.lock */,
 				DD75FBBC29C784C7006FB626 /* Sources */,
 				DD75FBBD29C784C7006FB626 /* Frameworks */,
 				DD75FBBE29C784C7006FB626 /* Resources */,
@@ -250,6 +307,10 @@
 				Base,
 			);
 			mainGroup = DD75FB9D29C784C3006FB626;
+			packageReferences = (
+				DD75FBE529C7FC17006FB626 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				DD75FBF329C815C1006FB626 /* XCRemoteSwiftPackageReference "web3swift" */,
+			);
 			productRefGroup = DD75FBA729C784C3006FB626 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,6 +349,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		279A4E41161534DEE8B5581A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eventura(SwiftUI)Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7831067D962242A86AAA427E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BED17BBB1B460D00977A98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eventura(SwiftUI)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD75FBA229C784C3006FB626 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -296,10 +426,12 @@
 				7415827F29C7A3E5001B7AA6 /* QRCodeScannerOverlay.swift in Sources */,
 				DD75FBDA29C78858006FB626 /* LoginView.swift in Sources */,
 				DD75FBDF29C79C8D006FB626 /* MainView.swift in Sources */,
+				7415828729C7B897001B7AA6 /* AllQRCodesView.swift in Sources */,
 				DD75FBD829C78529006FB626 /* BiometricAuthenticationManager.swift in Sources */,
 				DD75FBAC29C784C3006FB626 /* ContentView.swift in Sources */,
 				DD75FBDC29C7894C006FB626 /* SignUpView.swift in Sources */,
 				DD75FBD629C7850D006FB626 /* AuthenticationManager.swift in Sources */,
+				DD75FBE329C7F8F6006FB626 /* MintNFT.swift in Sources */,
 				7415827B29C799B4001B7AA6 /* CameraViewModel.swift in Sources */,
 				DD75FBAA29C784C3006FB626 /* Eventura_SwiftUI_App.swift in Sources */,
 				7415827D29C7A311001B7AA6 /* QRCodeDetailView.swift in Sources */,
@@ -377,6 +509,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -457,13 +590,14 @@
 		};
 		DD75FBCB29C784C7006FB626 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA99B20EDC09FA34492266E /* Pods-Eventura(SwiftUI).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(SwiftUI)/Preview Content\"";
-				DEVELOPMENT_TEAM = AF2PS24USW;
+				DEVELOPMENT_TEAM = 66P66L2U9P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Eventura-SwiftUI--Info.plist";
@@ -490,13 +624,14 @@
 		};
 		DD75FBCC29C784C7006FB626 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2EE600282F7DE8792C079E /* Pods-Eventura(SwiftUI).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(SwiftUI)/Preview Content\"";
-				DEVELOPMENT_TEAM = AF2PS24USW;
+				DEVELOPMENT_TEAM = 66P66L2U9P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Eventura-SwiftUI--Info.plist";
@@ -523,6 +658,7 @@
 		};
 		DD75FBCE29C784C7006FB626 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D31A3473086D8C661C5B04C /* Pods-Eventura(SwiftUI)Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,6 +678,7 @@
 		};
 		DD75FBCF29C784C7006FB626 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26574A6E15A9F60D71BBF0F5 /* Pods-Eventura(SwiftUI)Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -561,6 +698,7 @@
 		};
 		DD75FBD129C784C7006FB626 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 773D84B42D7B68A78C458496 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +716,7 @@
 		};
 		DD75FBD229C784C7006FB626 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B1E252F60A5BC622BC8404 /* Pods-Eventura(SwiftUI)-Eventura(SwiftUI)UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -633,6 +772,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD75FBE529C7FC17006FB626 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DD75FBF329C815C1006FB626 /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD75FBE629C7FC17006FB626 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD75FBE529C7FC17006FB626 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		DD75FBF429C815C1006FB626 /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD75FBF329C815C1006FB626 /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD75FB9E29C784C3006FB626 /* Project object */;
 }
