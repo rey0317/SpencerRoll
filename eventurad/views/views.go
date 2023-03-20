@@ -58,8 +58,8 @@ func GetBooth(c *atreugo.RequestCtx) error {
     defer rows.Close()
 
     for rows.Next() {
-        rows.Scan(&booth.name, &booth.secret, &booth.active, &booth.eventid, &booth.boothid, &booth.geodata)
-        boothArr = append(boothArr, []any{booth.Secret, booth.BoothId, booth.Name})
+        rows.Scan(&booth.Name, &booth.Secret, &booth.Eventid, &booth.Boothid)
+        boothArr = append(boothArr, []any{booth.Name, booth.BoothId, booth.Secret})
     }
 
     LogHTTP(http.StatusOK, c)
