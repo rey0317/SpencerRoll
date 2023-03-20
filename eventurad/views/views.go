@@ -69,12 +69,12 @@ func GetBooth(c *atreugo.RequestCtx) error {
 func PostUser(c *atreugo.RequestCtx) error {
     var user User
 
-    if err := json.Unmarshal(c.Request.Body(), &booth); err != nil {
+    if err := json.Unmarshal(c.Request.Body(), &user); err != nil {
         LogHTTP(http.StatusUnprocessableEntity, c)
         return c.JSONResponse([]byte(err.Error()), http.StatusUnprocessableEntity)
     }
 
-    _, err := eventuraDB.Exec(ctx, `INSERT INTO users (address, booths) VALUES ($1, $2)`, booth.Address, booth.BoothId)
+    _, err := eventuraDB.Exec(ctx, `INSERT INTO users (address, booths) VALUES ($1, $2)`, user.Address, user.BoothId)
     if err != nil {
         LogHTTP(http.StatusInternalServerError, c)
         return c.JSONResponse([]byte(err.Error()), http.StatusInternalServerError)
