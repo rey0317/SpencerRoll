@@ -1,3 +1,4 @@
+package router
 
 import (
     "eventurad/views"
@@ -14,7 +15,7 @@ type Route struct {
 
 var routes = []Route {
     {"GET", "/getbooth/", views.GetBooth},
-    {"POST", "/postuser/", views.PostUser},
+    {"POST", "/postuser/", views.PostChatt},
 }
 
 func New() *atreugo.Atreugo {
