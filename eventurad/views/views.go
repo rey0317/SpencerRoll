@@ -5,7 +5,6 @@ import (
     "encoding/json"
     "log"
     "net/http"
-    "time"
 
     "github.com/savsgio/atreugo/v11"
     "github.com/jackc/pgx/v4/pgxpool"
@@ -13,7 +12,7 @@ import (
 
 type User struct {
     Address string    `json:"address"`
-    BoothId   string    `json:"boothid"`
+    BoothId   int    `json:"boothid"`
 }
 
 type Booth struct {
@@ -67,20 +66,20 @@ func GetBooth(c *atreugo.RequestCtx) error {
     return c.JSONResponse(map[string][][]any{"booths": boothArr}, http.StatusOK)
 }
 
-func PostUser(c *atreugo.RequestCtx) error {
-    var user User
+// func PostUser(c *atreugo.RequestCtx) error {
+//     var user User
 
-    if err := json.Unmarshal(c.Request.Body(), &booth); err != nil {
-        LogHTTP(http.StatusUnprocessableEntity, c)
-        return c.JSONResponse([]byte(err.Error()), http.StatusUnprocessableEntity)
-    }
+//     if err := json.Unmarshal(c.Request.Body(), &booth); err != nil {
+//         LogHTTP(http.StatusUnprocessableEntity, c)
+//         return c.JSONResponse([]byte(err.Error()), http.StatusUnprocessableEntity)
+//     }
 
-    _, err := eventuraDB.Exec(ctx, `INSERT INTO users (address, booths) VALUES ($1, $2)`, booth.Address, booth.BoothId)
-    if err != nil {
-        LogHTTP(http.StatusInternalServerError, c)
-        return c.JSONResponse([]byte(err.Error()), http.StatusInternalServerError)
-    }
+//     _, err := eventuraDB.Exec(ctx, `INSERT INTO users (address, booths) VALUES ($1, $2)`, booth.Address, booth.BoothId)
+//     if err != nil {
+//         LogHTTP(http.StatusInternalServerError, c)
+//         return c.JSONResponse([]byte(err.Error()), http.StatusInternalServerError)
+//     }
 
-    LogHTTP(http.StatusOK, c)
-    return c.JSONResponse(emptyJSON, http.StatusOK)
-}
+//     LogHTTP(http.StatusOK, c)
+//     return c.JSONResponse(emptyJSON, http.StatusOK)
+// }
