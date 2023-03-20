@@ -58,7 +58,7 @@ func GetBooth(c *atreugo.RequestCtx) error {
     defer rows.Close()
 
     for rows.Next() {
-        rows.Scan(&booth.Name, &booth.Secret, &booth.Eventid, &booth.Boothid)
+        rows.Scan(&booth.Name, &booth.Secret, &booth.EventId, &booth.BoothId)
         boothArr = append(boothArr, []any{booth.Name, booth.BoothId, booth.Secret})
     }
 
