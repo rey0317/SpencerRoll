@@ -60,7 +60,7 @@ func GetBooth(c *atreugo.RequestCtx) error {
 
     for rows.Next() {
         rows.Scan(&booth.name, &booth.secret, &booth.active, &booth.eventid, &booth.boothid, &booth.geodata)
-        boothArr = append(boothArr, []any{booth.Secret, chatt.BoothId, booth.Name})
+        boothArr = append(boothArr, []any{booth.Secret, booth.BoothId, booth.Name})
     }
 
     LogHTTP(http.StatusOK, c)
@@ -70,12 +70,12 @@ func GetBooth(c *atreugo.RequestCtx) error {
 func PostUser(c *atreugo.RequestCtx) error {
     var user User
 
-    if err := json.Unmarshal(c.Request.Body(), &chatt); err != nil {
+    if err := json.Unmarshal(c.Request.Body(), &booth); err != nil {
         LogHTTP(http.StatusUnprocessableEntity, c)
         return c.JSONResponse([]byte(err.Error()), http.StatusUnprocessableEntity)
     }
 
-    _, err := chatterDB.Exec(ctx, `INSERT INTO users (address, booths) VALUES ($1, $2)`, chatt.Address, chatt.BoothId)
+    _, err := eventuraDB.Exec(ctx, `INSERT INTO users (address, booths) VALUES ($1, $2)`, booth.Address, booth.BoothId)
     if err != nil {
         LogHTTP(http.StatusInternalServerError, c)
         return c.JSONResponse([]byte(err.Error()), http.StatusInternalServerError)
