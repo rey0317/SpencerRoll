@@ -32,12 +32,11 @@ struct MainMenuView: View {
                 Button(action: {
                     if showWalletDetails {
                         disableFaceID = true // Set disableFaceID to true when "Hide Wallet Details" is clicked
+                        showWalletDetails = false // Set showWalletDetails to false when "Hide Wallet Details" is clicked
                     } else {
                         disableFaceID = false // Set disableFaceID to false when "Retrieve Wallet Details" is clicked
                         authenticateAndShowDetails()
-                        retrievePrivateKey()
                     }
-                    showWalletDetails.toggle() // Toggle the showWalletDetails state variable
                 }) {
                     Text(showWalletDetails ? "Hide My Wallet" : "Retrieve My Wallet") // Update the button text based on the state of showWalletDetails
                         .foregroundColor(.white)
@@ -45,6 +44,7 @@ struct MainMenuView: View {
                         .modifier(GradientButton())
                         .cornerRadius(10)
                 }
+
                 if showWalletDetails {
                     VStack (alignment: .leading, spacing: 10) {
                         Text("Wallet Address: \(walletAddress)")
@@ -87,6 +87,7 @@ struct MainMenuView: View {
                     isShowingScannerView = false
                 }
             }
+
         }
     }
 
@@ -97,7 +98,9 @@ struct MainMenuView: View {
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Access your wallet details") { success, _ in
                 DispatchQueue.main.async {
-                    showWalletDetails = success
+                    if success {
+                        showWalletDetails = true
+                    }
                 }
             }
         }
@@ -108,6 +111,7 @@ struct MainMenuView: View {
         privateKey = keychain.get("privateKey") ?? ""
     }
 }
+
 
 struct ProgressBar: View {
     var value: CGFloat
