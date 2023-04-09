@@ -25,7 +25,7 @@ struct MainMenuView: View {
         NavigationView {
             VStack(spacing: 30) {
                 Spacer()
-                Text("Go Exploring")
+                Text("ETH Denver Conference")
                     .font(.largeTitle)
                     .modifier(GradientText())
                 Spacer()
@@ -39,7 +39,7 @@ struct MainMenuView: View {
                     }
                     showWalletDetails.toggle() // Toggle the showWalletDetails state variable
                 }) {
-                    Text(showWalletDetails ? "Hide Wallet Details" : "Retrieve Wallet Details") // Update the button text based on the state of showWalletDetails
+                    Text(showWalletDetails ? "Hide My Wallet" : "Retrieve My Wallet") // Update the button text based on the state of showWalletDetails
                         .foregroundColor(.white)
                         .padding()
                         .modifier(GradientButton())
