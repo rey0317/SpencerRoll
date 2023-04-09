@@ -55,23 +55,26 @@ struct MainMenuView: View {
                 ProgressBar(value: CGFloat(boothsScanned), maximumValue: CGFloat(sampleBooths.count))
                     .frame(height: 10)
                 Text("Booths Scanned: \(boothsScanned)/\(sampleBooths.count)")
-                Button(action: {
-                    isShowingScannerView = true
-                }) {
-                    Text("Scan QR Code")
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.green)
-                        .cornerRadius(10)
+                HStack(spacing: 30) {
+                    Button(action: {
+                        isShowingScannerView = true
+                    }) {
+                        Text("Scan QR Code")
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.green)
+                            .cornerRadius(10)
+                    }
+                    
+                    NavigationLink(destination: MintNFTView(walletAddress: walletAddress, publicKey: publicKey, privateKey: privateKey)) {
+                        Text("Mint NFT")
+                            .padding()
+                            .background(boothsScanned == sampleBooths.count ? Color.blue : Color.gray)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+                    .disabled(boothsScanned != sampleBooths.count)
                 }
-                NavigationLink(destination: MintNFTView(walletAddress: walletAddress, publicKey: publicKey, privateKey: privateKey)) {
-                    Text("Mint NFT")
-                        .padding()
-                        .background(boothsScanned == sampleBooths.count ? Color.blue : Color.gray)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
-                .disabled(boothsScanned != sampleBooths.count)
                 Spacer()
             }
             .padding()
