@@ -17,6 +17,7 @@ struct EventMainMenuView: View {
     @State private var isRetrievingCredentials = false
     @State private var mintTransactionHash: String?
     @State private var showMintTransactionView = false
+    @State private var isShowingScannerView = false
     
     // Add state for booth scan count
     @State private var boothScanCount = UserDefaults.standard.integer(forKey: "boothScanCount")
@@ -127,8 +128,7 @@ struct EventMainMenuView: View {
        
             Button(action: {
                 // Scan QR code
-                let qrCodeScanningView = QRCodeScanningView(boothScanCount: $boothScanCount, sampleBooths: $booths)
-                UIApplication.shared.windows.first?.rootViewController?.present(UIHostingController(rootView: qrCodeScanningView), animated: true, completion: nil)
+                isShowingScannerView = true
                 UserDefaults.standard.set(boothScanCount, forKey: "boothScanCount")
 
             }) {
@@ -141,7 +141,16 @@ struct EventMainMenuView: View {
                     .cornerRadius(10)
                     .padding(.horizontal, 40)
             }
-
+            
+            .sheet(isPresented: $isShowingScannerView) {
+                            QRCodeScannerView { code in
+                                if let boothCode = code {
+                                    boothScanCount += 1
+                                    print("Scanned booth code: \(boothCode)")
+                                }
+                                isShowingScannerView = false
+                            }
+                        }
 
             Button(action: {
                 // Create NFT and mint to wallet address
