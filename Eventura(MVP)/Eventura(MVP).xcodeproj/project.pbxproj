@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		178F96465E4517717D03E8AD /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B40AE51BF1E545D33C1866 /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework */; };
+		7B2A08C598ACC53EE12EF0CF /* Pods_Eventura_MVP_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533594AF691FE187323FD854 /* Pods_Eventura_MVP_.framework */; };
+		DD8C3BE829DFAD9B00A15424 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD8C3BE729DFAD9B00A15424 /* KeychainSwift */; };
+		DD8C3BEC29DFCE7900A15424 /* Booth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C3BEB29DFCE7900A15424 /* Booth.swift */; };
+		DD8C3BEE29DFCE9800A15424 /* Location Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C3BED29DFCE9800A15424 /* Location Manager.swift */; };
+		DD8C3BF029DFD7A000A15424 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8C3BEF29DFD7A000A15424 /* 1.png */; };
+		DD9531AA29E0916D00AD2D5C /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = DD9531A929E0916D00AD2D5C /* web3swift */; };
+		DD9531AC29E0A9D900AD2D5C /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9531AB29E0A9D900AD2D5C /* 3.png */; };
+		DD9531AF29E0ACC900AD2D5C /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9531AD29E0ACC900AD2D5C /* 2.png */; };
+		DD9531B029E0ACC900AD2D5C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9531AE29E0ACC900AD2D5C /* 4.png */; };
+		DD9531B229E0B54C00AD2D5C /* NFT.sol in Sources */ = {isa = PBXBuildFile; fileRef = DD9531B129E0B54C00AD2D5C /* NFT.sol */; };
+		DD9531B629E2630600AD2D5C /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9531B529E2630600AD2D5C /* SignupView.swift */; };
+		DDDD728F29DE617C00907FD6 /* Eventura_MVP_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD728E29DE617C00907FD6 /* Eventura_MVP_App.swift */; };
+		DDDD729129DE617C00907FD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD729029DE617C00907FD6 /* ContentView.swift */; };
+		DDDD729329DE618000907FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDD729229DE618000907FD6 /* Assets.xcassets */; };
+		DDDD729629DE618000907FD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDD729529DE618000907FD6 /* Preview Assets.xcassets */; };
+		DDDD72BF29DE62A000907FD6 /* EventMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD72BE29DE62A000907FD6 /* EventMenuView.swift */; };
+		DDDD72C729DE641A00907FD6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD72C629DE641900907FD6 /* User.swift */; };
+		DDDD72C929DE643200907FD6 /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD72C829DE643200907FD6 /* QRCodeScannerView.swift */; };
+		DDDD72CD29DE64A400907FD6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD72CC29DE64A400907FD6 /* KeychainService.swift */; };
+		FE7F1F0F9B4712FC291BD4D0 /* Pods_Eventura_MVP_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB3362BA6FBD368B80E1F15 /* Pods_Eventura_MVP_Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDDD729C29DE618100907FD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDD728329DE617B00907FD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDDD728A29DE617C00907FD6;
+			remoteInfo = "Eventura(MVP)";
+		};
+		DDDD72A629DE618100907FD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDD728329DE617B00907FD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDDD728A29DE617C00907FD6;
+			remoteInfo = "Eventura(MVP)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20B40AE51BF1E545D33C1866 /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_MVP__Eventura_MVP_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500E91E3D8113FF1D66F22C3 /* Pods-Eventura(MVP).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP).release.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)/Pods-Eventura(MVP).release.xcconfig"; sourceTree = "<group>"; };
+		533594AF691FE187323FD854 /* Pods_Eventura_MVP_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_MVP_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		549A430EDF1E317DE495858F /* Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)-Eventura(MVP)UITests/Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AE33C1502F5B893134D893F /* Pods-Eventura(MVP).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP).debug.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)/Pods-Eventura(MVP).debug.xcconfig"; sourceTree = "<group>"; };
+		9D7EFA852F6DD5E30280FA1A /* Pods-Eventura(MVP)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)Tests/Pods-Eventura(MVP)Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B45F638A6558D5B4693D1144 /* Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)-Eventura(MVP)UITests/Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFB3362BA6FBD368B80E1F15 /* Pods_Eventura_MVP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_MVP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB93437F2F80C2CCD9AA00D3 /* Pods-Eventura(MVP)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP)Tests.release.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)Tests/Pods-Eventura(MVP)Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DD8C3BEB29DFCE7900A15424 /* Booth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booth.swift; sourceTree = "<group>"; };
+		DD8C3BED29DFCE9800A15424 /* Location Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Manager.swift"; sourceTree = "<group>"; };
+		DD8C3BEF29DFD7A000A15424 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../Downloads/1.png; sourceTree = "<group>"; };
+		DD9531AB29E0A9D900AD2D5C /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../../../../Downloads/3.png; sourceTree = "<group>"; };
+		DD9531AD29E0ACC900AD2D5C /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../../Downloads/2.png; sourceTree = "<group>"; };
+		DD9531AE29E0ACC900AD2D5C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = ../../../../Downloads/4.png; sourceTree = "<group>"; };
+		DD9531B129E0B54C00AD2D5C /* NFT.sol */ = {isa = PBXFileReference; explicitFileType = text; path = NFT.sol; sourceTree = "<group>"; };
+		DD9531B529E2630600AD2D5C /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		DDDD728B29DE617C00907FD6 /* Eventura(MVP).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eventura(MVP).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDD728E29DE617C00907FD6 /* Eventura_MVP_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventura_MVP_App.swift; sourceTree = "<group>"; };
+		DDDD729029DE617C00907FD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDDD729229DE618000907FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDDD729529DE618000907FD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDDD729B29DE618100907FD6 /* Eventura(MVP)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eventura(MVP)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDD72A529DE618100907FD6 /* Eventura(MVP)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eventura(MVP)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDD72BE29DE62A000907FD6 /* EventMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMenuView.swift; sourceTree = "<group>"; };
+		DDDD72C629DE641900907FD6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DDDD72C829DE643200907FD6 /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
+		DDDD72CC29DE64A400907FD6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDDD728829DE617C00907FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8C3BE829DFAD9B00A15424 /* KeychainSwift in Frameworks */,
+				DD9531AA29E0916D00AD2D5C /* web3swift in Frameworks */,
+				7B2A08C598ACC53EE12EF0CF /* Pods_Eventura_MVP_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDD729829DE618100907FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7F1F0F9B4712FC291BD4D0 /* Pods_Eventura_MVP_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDD72A229DE618100907FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178F96465E4517717D03E8AD /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E806E1A9BBCE97096143E10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				533594AF691FE187323FD854 /* Pods_Eventura_MVP_.framework */,
+				20B40AE51BF1E545D33C1866 /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework */,
+				BFB3362BA6FBD368B80E1F15 /* Pods_Eventura_MVP_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6E000F5FA952F47EEDFFD22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AE33C1502F5B893134D893F /* Pods-Eventura(MVP).debug.xcconfig */,
+				500E91E3D8113FF1D66F22C3 /* Pods-Eventura(MVP).release.xcconfig */,
+				549A430EDF1E317DE495858F /* Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig */,
+				B45F638A6558D5B4693D1144 /* Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig */,
+				9D7EFA852F6DD5E30280FA1A /* Pods-Eventura(MVP)Tests.debug.xcconfig */,
+				DB93437F2F80C2CCD9AA00D3 /* Pods-Eventura(MVP)Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DDDD728229DE617B00907FD6 = {
+			isa = PBXGroup;
+			children = (
+				DDDD728D29DE617C00907FD6 /* Eventura(MVP) */,
+				DDDD728C29DE617C00907FD6 /* Products */,
+				B6E000F5FA952F47EEDFFD22 /* Pods */,
+				7E806E1A9BBCE97096143E10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDDD728C29DE617C00907FD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD728B29DE617C00907FD6 /* Eventura(MVP).app */,
+				DDDD729B29DE618100907FD6 /* Eventura(MVP)Tests.xctest */,
+				DDDD72A529DE618100907FD6 /* Eventura(MVP)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDDD728D29DE617C00907FD6 /* Eventura(MVP) */ = {
+			isa = PBXGroup;
+			children = (
+				DD9531AB29E0A9D900AD2D5C /* 3.png */,
+				DD8C3BEF29DFD7A000A15424 /* 1.png */,
+				DD9531AD29E0ACC900AD2D5C /* 2.png */,
+				DD9531AE29E0ACC900AD2D5C /* 4.png */,
+				DD8C3BED29DFCE9800A15424 /* Location Manager.swift */,
+				DDDD728E29DE617C00907FD6 /* Eventura_MVP_App.swift */,
+				DDDD729029DE617C00907FD6 /* ContentView.swift */,
+				DDDD729229DE618000907FD6 /* Assets.xcassets */,
+				DDDD729429DE618000907FD6 /* Preview Content */,
+				DDDD72BE29DE62A000907FD6 /* EventMenuView.swift */,
+				DDDD72C629DE641900907FD6 /* User.swift */,
+				DDDD72C829DE643200907FD6 /* QRCodeScannerView.swift */,
+				DDDD72CC29DE64A400907FD6 /* KeychainService.swift */,
+				DD8C3BEB29DFCE7900A15424 /* Booth.swift */,
+				DD9531B129E0B54C00AD2D5C /* NFT.sol */,
+				DD9531B529E2630600AD2D5C /* SignupView.swift */,
+			);
+			path = "Eventura(MVP)";
+			sourceTree = "<group>";
+		};
+		DDDD729429DE618000907FD6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD729529DE618000907FD6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDDD728A29DE617C00907FD6 /* Eventura(MVP) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDD72AF29DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)" */;
+			buildPhases = (
+				BF12CEBCA6B5B71428741A6D /* [CP] Check Pods Manifest.lock */,
+				DDDD728729DE617C00907FD6 /* Sources */,
+				DDDD728829DE617C00907FD6 /* Frameworks */,
+				DDDD728929DE617C00907FD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eventura(MVP)";
+			packageProductDependencies = (
+				DD8C3BE729DFAD9B00A15424 /* KeychainSwift */,
+				DD9531A929E0916D00AD2D5C /* web3swift */,
+			);
+			productName = "Eventura(MVP)";
+			productReference = DDDD728B29DE617C00907FD6 /* Eventura(MVP).app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDDD729A29DE618100907FD6 /* Eventura(MVP)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDD72B229DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)Tests" */;
+			buildPhases = (
+				7F0FEA81400EBF2F1DA09F5B /* [CP] Check Pods Manifest.lock */,
+				DDDD729729DE618100907FD6 /* Sources */,
+				DDDD729829DE618100907FD6 /* Frameworks */,
+				DDDD729929DE618100907FD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDDD729D29DE618100907FD6 /* PBXTargetDependency */,
+			);
+			name = "Eventura(MVP)Tests";
+			productName = "Eventura(MVP)Tests";
+			productReference = DDDD729B29DE618100907FD6 /* Eventura(MVP)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDDD72A429DE618100907FD6 /* Eventura(MVP)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDD72B529DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)UITests" */;
+			buildPhases = (
+				55515EDE9B0FBC1B03AD25A9 /* [CP] Check Pods Manifest.lock */,
+				DDDD72A129DE618100907FD6 /* Sources */,
+				DDDD72A229DE618100907FD6 /* Frameworks */,
+				DDDD72A329DE618100907FD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDDD72A729DE618100907FD6 /* PBXTargetDependency */,
+			);
+			name = "Eventura(MVP)UITests";
+			productName = "Eventura(MVP)UITests";
+			productReference = DDDD72A529DE618100907FD6 /* Eventura(MVP)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDDD728329DE617B00907FD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DDDD728A29DE617C00907FD6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					DDDD729A29DE618100907FD6 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = DDDD728A29DE617C00907FD6;
+					};
+					DDDD72A429DE618100907FD6 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = DDDD728A29DE617C00907FD6;
+					};
+				};
+			};
+			buildConfigurationList = DDDD728629DE617B00907FD6 /* Build configuration list for PBXProject "Eventura(MVP)" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDDD728229DE617B00907FD6;
+			packageReferences = (
+				DD8C3BE629DFAD9B00A15424 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				DD9531A829E0916D00AD2D5C /* XCRemoteSwiftPackageReference "web3swift" */,
+			);
+			productRefGroup = DDDD728C29DE617C00907FD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDDD728A29DE617C00907FD6 /* Eventura(MVP) */,
+				DDDD729A29DE618100907FD6 /* Eventura(MVP)Tests */,
+				DDDD72A429DE618100907FD6 /* Eventura(MVP)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDDD728929DE617C00907FD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9531B029E0ACC900AD2D5C /* 4.png in Resources */,
+				DDDD729629DE618000907FD6 /* Preview Assets.xcassets in Resources */,
+				DDDD729329DE618000907FD6 /* Assets.xcassets in Resources */,
+				DD9531AF29E0ACC900AD2D5C /* 2.png in Resources */,
+				DD8C3BF029DFD7A000A15424 /* 1.png in Resources */,
+				DD9531AC29E0A9D900AD2D5C /* 3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDD729929DE618100907FD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDD72A329DE618100907FD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55515EDE9B0FBC1B03AD25A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eventura(MVP)-Eventura(MVP)UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F0FEA81400EBF2F1DA09F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eventura(MVP)Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF12CEBCA6B5B71428741A6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eventura(MVP)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDDD728729DE617C00907FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDD729129DE617C00907FD6 /* ContentView.swift in Sources */,
+				DDDD72C929DE643200907FD6 /* QRCodeScannerView.swift in Sources */,
+				DD8C3BEC29DFCE7900A15424 /* Booth.swift in Sources */,
+				DDDD72BF29DE62A000907FD6 /* EventMenuView.swift in Sources */,
+				DD8C3BEE29DFCE9800A15424 /* Location Manager.swift in Sources */,
+				DDDD72CD29DE64A400907FD6 /* KeychainService.swift in Sources */,
+				DDDD728F29DE617C00907FD6 /* Eventura_MVP_App.swift in Sources */,
+				DDDD72C729DE641A00907FD6 /* User.swift in Sources */,
+				DD9531B629E2630600AD2D5C /* SignupView.swift in Sources */,
+				DD9531B229E0B54C00AD2D5C /* NFT.sol in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDD729729DE618100907FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDD72A129DE618100907FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDDD729D29DE618100907FD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDDD728A29DE617C00907FD6 /* Eventura(MVP) */;
+			targetProxy = DDDD729C29DE618100907FD6 /* PBXContainerItemProxy */;
+		};
+		DDDD72A729DE618100907FD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDDD728A29DE617C00907FD6 /* Eventura(MVP) */;
+			targetProxy = DDDD72A629DE618100907FD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DDDD72AD29DE618100907FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDDD72AE29DE618100907FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDDD72B029DE618100907FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE33C1502F5B893134D893F /* Pods-Eventura(MVP).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Eventura(MVP)/Preview Content\"";
+				DEVELOPMENT_TEAM = 66P66L2U9P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "	";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan QR codes for event attendance";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "For tieing credentials";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Verificatin;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-MVP-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDDD72B129DE618100907FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 500E91E3D8113FF1D66F22C3 /* Pods-Eventura(MVP).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Eventura(MVP)/Preview Content\"";
+				DEVELOPMENT_TEAM = 66P66L2U9P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "	";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan QR codes for event attendance";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "For tieing credentials";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Verificatin;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-MVP-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDDD72B329DE618100907FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D7EFA852F6DD5E30280FA1A /* Pods-Eventura(MVP)Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-MVP-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eventura(MVP).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eventura(MVP)";
+			};
+			name = Debug;
+		};
+		DDDD72B429DE618100907FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB93437F2F80C2CCD9AA00D3 /* Pods-Eventura(MVP)Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-MVP-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eventura(MVP).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eventura(MVP)";
+			};
+			name = Release;
+		};
+		DDDD72B629DE618100907FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549A430EDF1E317DE495858F /* Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-MVP-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eventura(MVP)";
+			};
+			name = Debug;
+		};
+		DDDD72B729DE618100907FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45F638A6558D5B4693D1144 /* Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-MVP-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eventura(MVP)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDDD728629DE617B00907FD6 /* Build configuration list for PBXProject "Eventura(MVP)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDD72AD29DE618100907FD6 /* Debug */,
+				DDDD72AE29DE618100907FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDDD72AF29DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDD72B029DE618100907FD6 /* Debug */,
+				DDDD72B129DE618100907FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDDD72B229DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDD72B329DE618100907FD6 /* Debug */,
+				DDDD72B429DE618100907FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDDD72B529DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDD72B629DE618100907FD6 /* Debug */,
+				DDDD72B729DE618100907FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD8C3BE629DFAD9B00A15424 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+		DD9531A829E0916D00AD2D5C /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD8C3BE729DFAD9B00A15424 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD8C3BE629DFAD9B00A15424 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		DD9531A929E0916D00AD2D5C /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD9531A829E0916D00AD2D5C /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DDDD728329DE617B00907FD6 /* Project object */;
+}
