@@ -40,26 +40,32 @@ struct EventMainMenuView: View {
         
         do {
             // Replace with the actual contract address for the "Sugih" token
-            let contractAddress = try EthereumAddress(hex:"0xC23D623054E59389276C6D2AFa4941C8eC55804D", eip55: true)
+            let contractAddress = try EthereumAddress(hex:"0x4517BAbfA5Ef0D9bDdD4Fd03D6fF695f9c1FFCa2", eip55: true)
+            print(contractAddress)
             // Use the ERC20 ABI or the ABI specific to your "Sugih" token
             let contract = web3.eth.Contract(type: GenericERC20Contract.self, address: contractAddress)
-            let senderAddress = try EthereumAddress(hex:"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4", eip55: true)
+            let senderAddress = try EthereumAddress(hex:"0x07F85d73Bc89dB56C6141E49b6eE51EECc56ed74", eip55: true)
+            print(senderAddress)
             let keychainService = KeychainService()
             let receiverAddress = keychainService.getCredentials()?.walletAddress
+            let privateKey = keychainService.getCredentials()?.privateKey
             guard let receiverWalletAddress = receiverAddress else { return }
             let receiver = try EthereumAddress(hex: receiverWalletAddress, eip55: true)
-            
-            let myPrivateKey = try EthereumPrivateKey(hexPrivateKey: "...")
+            print(receiver)
+ 
+        
+            let myPrivateKey = try EthereumPrivateKey(hexPrivateKey: privateKey!)
+            print(myPrivateKey)
             firstly {
                 web3.eth.getTransactionCount(address: myPrivateKey.address, block: .latest)
             }.then { nonce in
-                try contract.transfer(to: EthereumAddress(hex: "0x07F85d73Bc89dB56C6141E49b6eE51EECc56ed74", eip55: true), value: 100000).createTransaction(
-                    nonce: nonce,
-                    gasPrice: EthereumQuantity(quantity: 21.gwei),
-                    maxFeePerGas: nil,
-                    maxPriorityFeePerGas: nil,
-                    gasLimit: 100000,
-                    from: myPrivateKey.address,
+                try contract.transfer(to: EthereumAddress(hex: receiverWalletAddress, eip55: true), value: 1).createTransaction(
+                    nonce: 0,
+                    gasPrice: EthereumQuantity(quantity: 5.gwei),
+                    maxFeePerGas: EthereumQuantity(quantity: 21.gwei),
+                    maxPriorityFeePerGas: EthereumQuantity(quantity: 1.gwei),
+                    gasLimit: 3000000,
+                    from: senderAddress,
                     value: 0,
                     accessList: [:],
                     transactionType: .legacy
