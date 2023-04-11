@@ -1,8 +1,10 @@
 import SwiftUI
 import LocalAuthentication
-import web3swift
-import Web3Core
-import BigInt
+import Web3
+
+// Optional
+import Web3PromiseKit
+import Web3ContractABI
 
 struct EventMainMenuView: View {
     
@@ -31,8 +33,51 @@ struct EventMainMenuView: View {
       func saveBoothScanCount() {
           UserDefaults.standard.set(self.boothScanCount, forKey: "boothScanCount")
       }
-    
+           
+    func sendSugihToken(to receiverAddress: String, amount: String, privateKey: String) {
+        // Replace with the actual RPC URL for the Ethereum network you're using (e.g., Mainnet, Ropsten, etc.)
+        let web3 = Web3(rpcURL: "https://goerli.infura.io/v3/4538bc3b71db4c7394b6f13cd63f29ff")
         
+        do {
+            // Replace with the actual contract address for the "Sugih" token
+            let contractAddress = try EthereumAddress(hex:"0xC23D623054E59389276C6D2AFa4941C8eC55804D", eip55: true)
+            // Use the ERC20 ABI or the ABI specific to your "Sugih" token
+            let contract = web3.eth.Contract(type: GenericERC20Contract.self, address: contractAddress)
+            let senderAddress = try EthereumAddress(hex:"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4", eip55: true)
+            let keychainService = KeychainService()
+            let receiverAddress = keychainService.getCredentials()?.walletAddress
+            guard let receiverWalletAddress = receiverAddress else { return }
+            let receiver = try EthereumAddress(hex: receiverWalletAddress, eip55: true)
+            
+            let myPrivateKey = try EthereumPrivateKey(hexPrivateKey: "...")
+            firstly {
+                web3.eth.getTransactionCount(address: myPrivateKey.address, block: .latest)
+            }.then { nonce in
+                try contract.transfer(to: EthereumAddress(hex: "0x07F85d73Bc89dB56C6141E49b6eE51EECc56ed74", eip55: true), value: 100000).createTransaction(
+                    nonce: nonce,
+                    gasPrice: EthereumQuantity(quantity: 21.gwei),
+                    maxFeePerGas: nil,
+                    maxPriorityFeePerGas: nil,
+                    gasLimit: 100000,
+                    from: myPrivateKey.address,
+                    value: 0,
+                    accessList: [:],
+                    transactionType: .legacy
+                )!.sign(with: myPrivateKey).promise
+            }.then { tx in
+                web3.eth.sendRawTransaction(transaction: tx)
+            }.done { txHash in
+                print(txHash)
+            }.catch { error in
+                print(error)
+            }
+            // Rest of your code goes here
+            
+        } catch {
+            print("Error: \(error)")
+        }
+    }
+    
     // function to enable mint
     func canMintNFT() -> Bool {
         let totalBooths = 4
@@ -163,20 +208,20 @@ struct EventMainMenuView: View {
 
             Button(action: {
                 // Create NFT and mint to wallet address
-                guard self.keychainService.getCredentials() != nil else {
-                    // Show an error message to the user
-                    let alert = UIAlertController(title: "No Saved Credentials", message: "You have not saved any wallet credentials yet.", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default))
-                    UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)
-                    return
-                }
+                guard let credentials = self.keychainService.getCredentials() else {
+                        // Show an error message to the user
+                        let alert = UIAlertController(title: "No Saved Credentials", message: "You have not saved any wallet credentials yet.", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default))
+                        UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)
+                        return
+                    }
                 
-                // TODO: SMART CONTRACT FUNCTIONALITY
-                // Call a basic ERC 721 contract and mint the NFT using the wallet credentials
-                // wallet credentials are currently stored on keychain and tied to biometrics (Face ID)
-                // We will use a basic ERC 721 Smart Contract that creates an NFT with two main details: IPFS Image Link & Time
-                // When the minting is successful and you have the transaction hash, we will display it here:
-                // additionally, we also display the IPFS image in the smart contract as well (need to implelemt this as well)
+                let receiverAddress = credentials.walletAddress
+                  let amountToSend = "10" // Replace with the desired amount of "Sugih" tokens to send
+                  
+                  // Call the sendSugihToken function
+                  sendSugihToken(to: receiverAddress, amount: amountToSend, privateKey: credentials.privateKey)
+                
                 self.mintTransactionHash = "0x123456789abcdef..." // --> replace with transaction hash from NFT
                 self.showMintTransactionView = true
                 

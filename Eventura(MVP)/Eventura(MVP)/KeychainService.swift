@@ -73,5 +73,10 @@ struct KeychainService {
         
         return query
     }
+    
+    func getWalletAddress() -> String? {
+        return load(key: walletAddressName)
+    }
 }
+
 

@@ -1,7 +1,5 @@
 import CoreLocation
 
-import CoreLocation
-
 struct Booth: Identifiable {
     let id: String
     let title: String
@@ -12,17 +10,21 @@ struct Booth: Identifiable {
 
 func createClosingTime(hour: Int, minute: Int) -> Date {
     var dateComponents = DateComponents()
+    let currentDate = Date()
+    let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)
+    dateComponents = Calendar.current.dateComponents([.year, .month, .day], from: tomorrow!)
     dateComponents.hour = hour
     dateComponents.minute = minute
     return Calendar.current.date(from: dateComponents) ?? Date()
 }
 
 var sampleBooths: [Booth] = [
-    Booth(id: "1", title: "Booth 1", location: CLLocationCoordinate2D(latitude: 42.270506029056634, longitude: -83.74339895330718), closingTime: createClosingTime(hour: 17, minute: 0), isScanned: false),
-    Booth(id: "2", title: "Booth 2", location: CLLocationCoordinate2D(latitude: 42.270506029056634, longitude: -83.74339895330718), closingTime: createClosingTime(hour: 18, minute: 30), isScanned: false),
-    Booth(id: "3", title: "Booth 3", location: CLLocationCoordinate2D(latitude: 42.270506029056634, longitude: -83.74339895330718), closingTime: createClosingTime(hour: 20, minute: 0), isScanned: false),
-    Booth(id: "5", title: "Booth 4", location: CLLocationCoordinate2D(latitude: 70, longitude: -83.74339895330718), closingTime: createClosingTime(hour: 21, minute: 45), isScanned: false)
+    Booth(id: "1", title: "Booth 1", location: CLLocationCoordinate2D(latitude: 42.270506029056634, longitude: -83.74339895330718), closingTime: createClosingTime(hour: 16, minute: 0), isScanned: false),
+    Booth(id: "2", title: "Booth 2", location: CLLocationCoordinate2D(latitude: 42.270506029056634, longitude: -83.74339895330718), closingTime: createClosingTime(hour: 16, minute: 30), isScanned: false),
+    Booth(id: "3", title: "Booth 3", location: CLLocationCoordinate2D(latitude: 42.270506029056634, longitude: -83.74339895330718), closingTime: createClosingTime(hour: 16, minute: 0), isScanned: false),
+    Booth(id: "4", title: "Booth 4", location: CLLocationCoordinate2D(latitude: 70, longitude: -83.74339895330718), closingTime: createClosingTime(hour: 16, minute: 45), isScanned: false)
 ]
+
 
 /*
 // Test 1: Invalid Booth
@@ -43,8 +45,6 @@ Booth(id: "4", title: "Booth 4", location: CLLocationCoordinate2D(latitude: 34.0
 ]
 */
 
-
-// Test 2: Incorrect time
 
 
 

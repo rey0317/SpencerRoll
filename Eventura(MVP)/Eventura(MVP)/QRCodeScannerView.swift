@@ -47,6 +47,8 @@ struct QRCodeScannerView: UIViewControllerRepresentable {
                     print("Booth found: \(booth.title)")
                     
                     let currentTime = Date()
+                    print("Booth found: \(booth.closingTime)")
+                    print("Booth found: \(currentTime)")
                     if currentTime <= booth.closingTime {
                         if distanceInMiles <= 1 {
                             if var boothIndex = sampleBooths.firstIndex(where: { $0.id == booth.id }) {

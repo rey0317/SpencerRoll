@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		178F96465E4517717D03E8AD /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B40AE51BF1E545D33C1866 /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework */; };
 		DD8C3BE829DFAD9B00A15424 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD8C3BE729DFAD9B00A15424 /* KeychainSwift */; };
 		DD8C3BEC29DFCE7900A15424 /* Booth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C3BEB29DFCE7900A15424 /* Booth.swift */; };
 		DD8C3BEE29DFCE9800A15424 /* Location Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C3BED29DFCE9800A15424 /* Location Manager.swift */; };
 		DD8C3BF029DFD7A000A15424 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8C3BEF29DFD7A000A15424 /* 1.png */; };
-		DD9531AA29E0916D00AD2D5C /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = DD9531A929E0916D00AD2D5C /* web3swift */; };
 		DD9531AC29E0A9D900AD2D5C /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9531AB29E0A9D900AD2D5C /* 3.png */; };
 		DD9531AF29E0ACC900AD2D5C /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9531AD29E0ACC900AD2D5C /* 2.png */; };
 		DD9531B029E0ACC900AD2D5C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9531AE29E0ACC900AD2D5C /* 4.png */; };
-		DD9531B229E0B54C00AD2D5C /* NFT.sol in Sources */ = {isa = PBXBuildFile; fileRef = DD9531B129E0B54C00AD2D5C /* NFT.sol */; };
 		DD9531B629E2630600AD2D5C /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9531B529E2630600AD2D5C /* SignupView.swift */; };
 		DDDD728F29DE617C00907FD6 /* Eventura_MVP_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD728E29DE617C00907FD6 /* Eventura_MVP_App.swift */; };
 		DDDD729129DE617C00907FD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD729029DE617C00907FD6 /* ContentView.swift */; };
@@ -26,7 +23,10 @@
 		DDDD72C729DE641A00907FD6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD72C629DE641900907FD6 /* User.swift */; };
 		DDDD72C929DE643200907FD6 /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD72C829DE643200907FD6 /* QRCodeScannerView.swift */; };
 		DDDD72CD29DE64A400907FD6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD72CC29DE64A400907FD6 /* KeychainService.swift */; };
-		FE7F1F0F9B4712FC291BD4D0 /* Pods_Eventura_MVP_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB3362BA6FBD368B80E1F15 /* Pods_Eventura_MVP_Tests.framework */; };
+		DDE599C929E5BD48004B1912 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = DDE599C829E5BD48004B1912 /* Web3 */; };
+		DDE599CB29E5BD48004B1912 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = DDE599CA29E5BD48004B1912 /* Web3ContractABI */; };
+		DDE599CD29E5BD48004B1912 /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDE599CC29E5BD48004B1912 /* Web3PromiseKit */; };
+		DDE599CF29E5BF85004B1912 /* NFTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE599CE29E5BF85004B1912 /* NFTManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,22 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20B40AE51BF1E545D33C1866 /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_MVP__Eventura_MVP_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		500E91E3D8113FF1D66F22C3 /* Pods-Eventura(MVP).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP).release.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)/Pods-Eventura(MVP).release.xcconfig"; sourceTree = "<group>"; };
-		533594AF691FE187323FD854 /* Pods_Eventura_MVP_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_MVP_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		549A430EDF1E317DE495858F /* Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)-Eventura(MVP)UITests/Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7AE33C1502F5B893134D893F /* Pods-Eventura(MVP).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP).debug.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)/Pods-Eventura(MVP).debug.xcconfig"; sourceTree = "<group>"; };
-		9D7EFA852F6DD5E30280FA1A /* Pods-Eventura(MVP)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)Tests/Pods-Eventura(MVP)Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B45F638A6558D5B4693D1144 /* Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)-Eventura(MVP)UITests/Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig"; sourceTree = "<group>"; };
-		BFB3362BA6FBD368B80E1F15 /* Pods_Eventura_MVP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventura_MVP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB93437F2F80C2CCD9AA00D3 /* Pods-Eventura(MVP)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventura(MVP)Tests.release.xcconfig"; path = "Target Support Files/Pods-Eventura(MVP)Tests/Pods-Eventura(MVP)Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DD8C3BEB29DFCE7900A15424 /* Booth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booth.swift; sourceTree = "<group>"; };
 		DD8C3BED29DFCE9800A15424 /* Location Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Manager.swift"; sourceTree = "<group>"; };
 		DD8C3BEF29DFD7A000A15424 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../Downloads/1.png; sourceTree = "<group>"; };
 		DD9531AB29E0A9D900AD2D5C /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../../../../Downloads/3.png; sourceTree = "<group>"; };
 		DD9531AD29E0ACC900AD2D5C /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../../Downloads/2.png; sourceTree = "<group>"; };
 		DD9531AE29E0ACC900AD2D5C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = ../../../../Downloads/4.png; sourceTree = "<group>"; };
-		DD9531B129E0B54C00AD2D5C /* NFT.sol */ = {isa = PBXFileReference; explicitFileType = text; path = NFT.sol; sourceTree = "<group>"; };
 		DD9531B529E2630600AD2D5C /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		DDDD728B29DE617C00907FD6 /* Eventura(MVP).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eventura(MVP).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDD728E29DE617C00907FD6 /* Eventura_MVP_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventura_MVP_App.swift; sourceTree = "<group>"; };
@@ -75,6 +65,7 @@
 		DDDD72C629DE641900907FD6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDDD72C829DE643200907FD6 /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
 		DDDD72CC29DE64A400907FD6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		DDE599CE29E5BF85004B1912 /* NFTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE599CB29E5BD48004B1912 /* Web3ContractABI in Frameworks */,
 				DD8C3BE829DFAD9B00A15424 /* KeychainSwift in Frameworks */,
-				DD9531AA29E0916D00AD2D5C /* web3swift in Frameworks */,
+				DDE599CD29E5BD48004B1912 /* Web3PromiseKit in Frameworks */,
+				DDE599C929E5BD48004B1912 /* Web3 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE7F1F0F9B4712FC291BD4D0 /* Pods_Eventura_MVP_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,32 +91,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				178F96465E4517717D03E8AD /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E806E1A9BBCE97096143E10 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				533594AF691FE187323FD854 /* Pods_Eventura_MVP_.framework */,
-				20B40AE51BF1E545D33C1866 /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework */,
-				BFB3362BA6FBD368B80E1F15 /* Pods_Eventura_MVP_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B6E000F5FA952F47EEDFFD22 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7AE33C1502F5B893134D893F /* Pods-Eventura(MVP).debug.xcconfig */,
-				500E91E3D8113FF1D66F22C3 /* Pods-Eventura(MVP).release.xcconfig */,
-				549A430EDF1E317DE495858F /* Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig */,
-				B45F638A6558D5B4693D1144 /* Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig */,
-				9D7EFA852F6DD5E30280FA1A /* Pods-Eventura(MVP)Tests.debug.xcconfig */,
-				DB93437F2F80C2CCD9AA00D3 /* Pods-Eventura(MVP)Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -135,7 +110,6 @@
 				DDDD728D29DE617C00907FD6 /* Eventura(MVP) */,
 				DDDD728C29DE617C00907FD6 /* Products */,
 				B6E000F5FA952F47EEDFFD22 /* Pods */,
-				7E806E1A9BBCE97096143E10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,8 +140,8 @@
 				DDDD72C829DE643200907FD6 /* QRCodeScannerView.swift */,
 				DDDD72CC29DE64A400907FD6 /* KeychainService.swift */,
 				DD8C3BEB29DFCE7900A15424 /* Booth.swift */,
-				DD9531B129E0B54C00AD2D5C /* NFT.sol */,
 				DD9531B529E2630600AD2D5C /* SignupView.swift */,
+				DDE599CE29E5BF85004B1912 /* NFTManager.swift */,
 			);
 			path = "Eventura(MVP)";
 			sourceTree = "<group>";
@@ -187,7 +161,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDDD72AF29DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)" */;
 			buildPhases = (
-				BF12CEBCA6B5B71428741A6D /* [CP] Check Pods Manifest.lock */,
 				DDDD728729DE617C00907FD6 /* Sources */,
 				DDDD728829DE617C00907FD6 /* Frameworks */,
 				DDDD728929DE617C00907FD6 /* Resources */,
@@ -199,7 +172,9 @@
 			name = "Eventura(MVP)";
 			packageProductDependencies = (
 				DD8C3BE729DFAD9B00A15424 /* KeychainSwift */,
-				DD9531A929E0916D00AD2D5C /* web3swift */,
+				DDE599C829E5BD48004B1912 /* Web3 */,
+				DDE599CA29E5BD48004B1912 /* Web3ContractABI */,
+				DDE599CC29E5BD48004B1912 /* Web3PromiseKit */,
 			);
 			productName = "Eventura(MVP)";
 			productReference = DDDD728B29DE617C00907FD6 /* Eventura(MVP).app */;
@@ -209,7 +184,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDDD72B229DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)Tests" */;
 			buildPhases = (
-				7F0FEA81400EBF2F1DA09F5B /* [CP] Check Pods Manifest.lock */,
 				DDDD729729DE618100907FD6 /* Sources */,
 				DDDD729829DE618100907FD6 /* Frameworks */,
 				DDDD729929DE618100907FD6 /* Resources */,
@@ -228,7 +202,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDDD72B529DE618100907FD6 /* Build configuration list for PBXNativeTarget "Eventura(MVP)UITests" */;
 			buildPhases = (
-				55515EDE9B0FBC1B03AD25A9 /* [CP] Check Pods Manifest.lock */,
 				DDDD72A129DE618100907FD6 /* Sources */,
 				DDDD72A229DE618100907FD6 /* Frameworks */,
 				DDDD72A329DE618100907FD6 /* Resources */,
@@ -277,7 +250,7 @@
 			mainGroup = DDDD728229DE617B00907FD6;
 			packageReferences = (
 				DD8C3BE629DFAD9B00A15424 /* XCRemoteSwiftPackageReference "keychain-swift" */,
-				DD9531A829E0916D00AD2D5C /* XCRemoteSwiftPackageReference "web3swift" */,
+				DDE599C729E5BD47004B1912 /* XCRemoteSwiftPackageReference "Web3" */,
 			);
 			productRefGroup = DDDD728C29DE617C00907FD6 /* Products */;
 			projectDirPath = "";
@@ -320,75 +293,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		55515EDE9B0FBC1B03AD25A9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Eventura(MVP)-Eventura(MVP)UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F0FEA81400EBF2F1DA09F5B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Eventura(MVP)Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF12CEBCA6B5B71428741A6D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Eventura(MVP)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		DDDD728729DE617C00907FD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -402,8 +306,8 @@
 				DDDD72CD29DE64A400907FD6 /* KeychainService.swift in Sources */,
 				DDDD728F29DE617C00907FD6 /* Eventura_MVP_App.swift in Sources */,
 				DDDD72C729DE641A00907FD6 /* User.swift in Sources */,
+				DDE599CF29E5BF85004B1912 /* NFTManager.swift in Sources */,
 				DD9531B629E2630600AD2D5C /* SignupView.swift in Sources */,
-				DD9531B229E0B54C00AD2D5C /* NFT.sol in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,14 +457,13 @@
 		};
 		DDDD72B029DE618100907FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AE33C1502F5B893134D893F /* Pods-Eventura(MVP).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(MVP)/Preview Content\"";
-				DEVELOPMENT_TEAM = VQVS27JHUP;
+				DEVELOPMENT_TEAM = 66P66L2U9P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Eventura;
@@ -578,7 +481,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.enrui.Eventura-MVP-";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.catchkg.Eventura-MVP-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -588,14 +491,13 @@
 		};
 		DDDD72B129DE618100907FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 500E91E3D8113FF1D66F22C3 /* Pods-Eventura(MVP).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(MVP)/Preview Content\"";
-				DEVELOPMENT_TEAM = VQVS27JHUP;
+				DEVELOPMENT_TEAM = 66P66L2U9P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Eventura;
@@ -613,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.enrui.Eventura-MVP-";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.catchkg.Eventura-MVP-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -623,7 +525,6 @@
 		};
 		DDDD72B329DE618100907FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D7EFA852F6DD5E30280FA1A /* Pods-Eventura(MVP)Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,7 +544,6 @@
 		};
 		DDDD72B429DE618100907FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB93437F2F80C2CCD9AA00D3 /* Pods-Eventura(MVP)Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -663,7 +563,6 @@
 		};
 		DDDD72B629DE618100907FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 549A430EDF1E317DE495858F /* Pods-Eventura(MVP)-Eventura(MVP)UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -681,7 +580,6 @@
 		};
 		DDDD72B729DE618100907FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B45F638A6558D5B4693D1144 /* Pods-Eventura(MVP)-Eventura(MVP)UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -747,12 +645,12 @@
 				minimumVersion = 20.0.0;
 			};
 		};
-		DD9531A829E0916D00AD2D5C /* XCRemoteSwiftPackageReference "web3swift" */ = {
+		DDE599C729E5BD47004B1912 /* XCRemoteSwiftPackageReference "Web3" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			repositoryURL = "https://github.com/Boilertalk/Web3.swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 0.8.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -763,10 +661,20 @@
 			package = DD8C3BE629DFAD9B00A15424 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
 		};
-		DD9531A929E0916D00AD2D5C /* web3swift */ = {
+		DDE599C829E5BD48004B1912 /* Web3 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DD9531A829E0916D00AD2D5C /* XCRemoteSwiftPackageReference "web3swift" */;
-			productName = web3swift;
+			package = DDE599C729E5BD47004B1912 /* XCRemoteSwiftPackageReference "Web3" */;
+			productName = Web3;
+		};
+		DDE599CA29E5BD48004B1912 /* Web3ContractABI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDE599C729E5BD47004B1912 /* XCRemoteSwiftPackageReference "Web3" */;
+			productName = Web3ContractABI;
+		};
+		DDE599CC29E5BD48004B1912 /* Web3PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDE599C729E5BD47004B1912 /* XCRemoteSwiftPackageReference "Web3" */;
+			productName = Web3PromiseKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
