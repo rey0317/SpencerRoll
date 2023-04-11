@@ -46,35 +46,38 @@ struct QRCodeScannerView: UIViewControllerRepresentable {
                     
                     print("Booth found: \(booth.title)")
                     
-                    if distanceInMiles <= 1 {
-                        if var boothIndex = sampleBooths.firstIndex(where: { $0.id == booth.id }) {
-                            // Update the `isScanned` property of the booth in `sampleBooths`
-                            sampleBooths[boothIndex].isScanned = true
+                    let currentTime = Date()
+                    if currentTime <= booth.closingTime {
+                        if distanceInMiles <= 1 {
+                            if var boothIndex = sampleBooths.firstIndex(where: { $0.id == booth.id }) {
+                                // Update the `isScanned` property of the booth in `sampleBooths`
+                                sampleBooths[boothIndex].isScanned = true
+                            }
+                            let message = "You have successfully scanned booth \(booth.title)."
+                            let alertController = UIAlertController(title: "Success!", message: message, preferredStyle: .alert)
+                            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                                self.onScannedCode(scannedText)
+                                booth.isScanned = true
+                                self.isScanning = false
+                                self.scannerViewController?.dismiss(animated: true, completion: nil)
+                            }))
+                            scannerViewController?.present(alertController, animated: true, completion: nil)
+                        } else {
+                            let message = "Booth \(booth.title) is more than 1 mile away. Please go closer to the booth."
+                            let alertController = UIAlertController(title: "Too far", message: message, preferredStyle: .alert)
+                            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                                self.scannerViewController?.dismiss(animated: true, completion: nil)
+                            }))
+                            scannerViewController?.present(alertController, animated: true, completion: nil)
                         }
-                        let message = "You have successfully scanned booth \(booth.title)."
-                        let alertController = UIAlertController(title: "Success!", message: message, preferredStyle: .alert)
-                        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-                            self.onScannedCode(scannedText)
-                            booth.isScanned = true
-                            self.isScanning = false
-                            self.scannerViewController?.dismiss(animated: true, completion: nil)
-                        }))
-                        scannerViewController?.present(alertController, animated: true, completion: nil)
                     } else {
-                        let message = "Booth \(booth.title) is more than 1 mile away. Please go closer to the booth."
-                        let alertController = UIAlertController(title: "Too far", message: message, preferredStyle: .alert)
+                        let message = "Booth \(booth.title) is closed. The QR code cannot be scanned after the closing time."
+                        let alertController = UIAlertController(title: "Booth closed", message: message, preferredStyle: .alert)
                         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
                             self.scannerViewController?.dismiss(animated: true, completion: nil)
                         }))
                         scannerViewController?.present(alertController, animated: true, completion: nil)
                     }
-                } else if let booth = sampleBooths.first(where: { $0.id == scannedText && $0.isScanned }) {
-                    let message = "You have already scanned booth \(booth.title)."
-                    let alertController = UIAlertController(title: "Duplicate scan", message: message, preferredStyle: .alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-                        self.scannerViewController?.dismiss(animated: true, completion: nil)
-                    }))
-                    scannerViewController?.present(alertController, animated: true, completion: nil)
                 } else {
                     let message = "Booth not found."
                     let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
@@ -85,7 +88,6 @@ struct QRCodeScannerView: UIViewControllerRepresentable {
                 }
             }
         }
-
 
     }
 }
