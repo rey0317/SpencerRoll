@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		178F96465E4517717D03E8AD /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B40AE51BF1E545D33C1866 /* Pods_Eventura_MVP__Eventura_MVP_UITests.framework */; };
-		7B2A08C598ACC53EE12EF0CF /* Pods_Eventura_MVP_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533594AF691FE187323FD854 /* Pods_Eventura_MVP_.framework */; };
 		DD8C3BE829DFAD9B00A15424 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD8C3BE729DFAD9B00A15424 /* KeychainSwift */; };
 		DD8C3BEC29DFCE7900A15424 /* Booth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C3BEB29DFCE7900A15424 /* Booth.swift */; };
 		DD8C3BEE29DFCE9800A15424 /* Location Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C3BED29DFCE9800A15424 /* Location Manager.swift */; };
@@ -85,7 +84,6 @@
 			files = (
 				DD8C3BE829DFAD9B00A15424 /* KeychainSwift in Frameworks */,
 				DD9531AA29E0916D00AD2D5C /* web3swift in Frameworks */,
-				7B2A08C598ACC53EE12EF0CF /* Pods_Eventura_MVP_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,10 +560,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(MVP)/Preview Content\"";
-				DEVELOPMENT_TEAM = 66P66L2U9P;
+				DEVELOPMENT_TEAM = VQVS27JHUP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "	";
+				INFOPLIST_KEY_CFBundleDisplayName = Eventura;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan QR codes for event attendance";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "For tieing credentials";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Verificatin;
@@ -580,7 +578,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-MVP-";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.enrui.Eventura-MVP-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -597,10 +595,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(MVP)/Preview Content\"";
-				DEVELOPMENT_TEAM = 66P66L2U9P;
+				DEVELOPMENT_TEAM = VQVS27JHUP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "	";
+				INFOPLIST_KEY_CFBundleDisplayName = Eventura;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan QR codes for event attendance";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "For tieing credentials";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Verificatin;
@@ -615,7 +613,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.mich.catchkg.Eventura-MVP-";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.enrui.Eventura-MVP-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -14,16 +14,22 @@ struct SignupView: View {
             Spacer()
             
             TextField("Public Key", text: $publicKey)
+                .font(.system(size: 18, weight: .bold))
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .frame(height: 50)
             
             TextField("Private Key", text: $privateKey)
+                .font(.system(size: 18, weight: .bold))
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .frame(height: 50)
             
             TextField("Wallet Address", text: $walletAddress)
+                .font(.system(size: 18, weight: .bold))
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .frame(height: 50)
             
             Button(action: {
                 let context = LAContext()

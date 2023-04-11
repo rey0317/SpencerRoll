@@ -45,6 +45,8 @@ struct EventMainMenuView: View {
     var body: some View {
         VStack {
             
+//            Spacer()
+            
             if !isShowingCredentials {
                 Button(action: {
                     self.isRetrievingCredentials = true
@@ -89,42 +91,49 @@ struct EventMainMenuView: View {
                 }) {
                     Text("Retrieve Wallet Credentials")
                         .fontWeight(.semibold)
-                        .font(.headline)
                         .padding()
-                        .foregroundColor(.white)
-                        .background(Color.blue)
+                        .foregroundColor(.blue)
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
+                    
                 }
+                
             } else {
                 VStack {
-                    Text("Public Key: \(publicKey)")
-                    Text("Private Key: \(privateKey)")
-                    Text("Wallet Address: \(walletAddress)")
                     
                     Button(action: {
                         self.isShowingCredentials = false
                     }) {
                         Text("Hide Wallet Credentials")
                             .fontWeight(.semibold)
-                            .font(.headline)
                             .padding()
-                            .foregroundColor(.white)
-                            .background(Color.blue)
+                            .foregroundColor(.blue)
                             .cornerRadius(10)
                             .padding(.horizontal, 40)
                     }
+                    
+                    VStack(alignment: .leading) {
+                        Text("Public Key: \(publicKey)")
+                        Text("Private Key: \(privateKey)")
+                        Text("Wallet Address: \(walletAddress)")
+                    }
                 }
             }
+        
+            Spacer()
             
             // Add booth scan counter
             Text("Booths scanned: \(boothScanCount)")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .modifier(GradientText())
                 .onAppear {
                             self.loadBoothScanCount()
                         }
                         .onDisappear {
                             self.saveBoothScanCount()
                         }
+            
        
             Button(action: {
                 // Scan QR code
@@ -199,46 +208,49 @@ struct EventMainMenuView: View {
                     }) {
                         Text("View on Etherscan")
                             .fontWeight(.semibold)
-                            .font(.headline)
                             .padding()
-                            .foregroundColor(.white)
-                            .background(Color.blue)
+                            .foregroundColor(.blue)
                             .cornerRadius(10)
                             .padding(.horizontal, 40)
                     }
                 }
             }
-
-            Button(action: {
-                // Log out and go back to ContentView
-                // KeychainService().deleteCredentials()
-                self.isLoggedIn = false
-            }) {
-                Text("Log Out")
-                    .fontWeight(.semibold)
-                    .font(.headline)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .padding(.horizontal, 40)
-            }
             
-            Button(action: {
-                KeychainService().deleteCredentials()
-                self.isLoggedIn = false
-                self.boothScanCount = 0
+            Spacer()
+            
+            HStack(spacing: 20) {
+                
+                Button(action: {
+                    // Log out and go back to ContentView
+                    // KeychainService().deleteCredentials()
+                    self.isLoggedIn = false
+                }) {
+                    Text("Log Out")
+                        .fontWeight(.semibold)
+                        .font(.headline)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding(.horizontal, 10)
+                }
+                
+                Button(action: {
+                    KeychainService().deleteCredentials()
+                    self.isLoggedIn = false
+                    self.boothScanCount = 0
                     boothScanCount = 0
-                UserDefaults.standard.set(boothScanCount, forKey: "boothScanCount")
-            }) {
-                Text("Delete Account")
-                    .fontWeight(.semibold)
-                    .font(.headline)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(Color.red)
-                    .cornerRadius(10)
-                    .padding(.horizontal, 40)
+                    UserDefaults.standard.set(boothScanCount, forKey: "boothScanCount")
+                }) {
+                    Text("Delete Account")
+                        .fontWeight(.semibold)
+                        .font(.headline)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.red)
+                        .cornerRadius(10)
+                        .padding(.horizontal, 10)
+                }
             }
             
         }
