@@ -36,11 +36,11 @@ struct EventMainMenuView: View {
            
     func sendSugihToken(to receiverAddress: String, amount: String, privateKey: String) {
         // Replace with the actual RPC URL for the Ethereum network you're using (e.g., Mainnet, Ropsten, etc.)
-        let web3 = Web3(rpcURL: "https://goerli.infura.io/v3/4538bc3b71db4c7394b6f13cd63f29ff")
+        let web3 = Web3(rpcURL: "https://sepolia.infura.io/v3/4538bc3b71db4c7394b6f13cd63f29ff")
         
         do {
             // Replace with the actual contract address for the "Sugih" token
-            let contractAddress = try EthereumAddress(hex:"0x4517BAbfA5Ef0D9bDdD4Fd03D6fF695f9c1FFCa2", eip55: true)
+            let contractAddress = try EthereumAddress(hex:"0x46A2A9f830664e25feAEe84bC7ebC86E0AB9f7e0", eip55: true)
             print(contractAddress)
             // Use the ERC20 ABI or the ABI specific to your "Sugih" token
             let contract = web3.eth.Contract(type: GenericERC20Contract.self, address: contractAddress)
@@ -48,23 +48,23 @@ struct EventMainMenuView: View {
             print(senderAddress)
             let keychainService = KeychainService()
             let receiverAddress = keychainService.getCredentials()?.walletAddress
+            print(receiverAddress)
             let privateKey = keychainService.getCredentials()?.privateKey
             guard let receiverWalletAddress = receiverAddress else { return }
             let receiver = try EthereumAddress(hex: receiverWalletAddress, eip55: true)
             print(receiver)
- 
-        
+            
             let myPrivateKey = try EthereumPrivateKey(hexPrivateKey: privateKey!)
             print(myPrivateKey)
             firstly {
-                web3.eth.getTransactionCount(address: myPrivateKey.address, block: .latest)
+                web3.eth.getTransactionCount(address: receiver, block: .latest)
             }.then { nonce in
-                try contract.transfer(to: EthereumAddress(hex: receiverWalletAddress, eip55: true), value: 1).createTransaction(
+                try contract.transfer(to: EthereumAddress(hex: receiverWalletAddress, eip55: true), value: 100).createTransaction(
                     nonce: 0,
-                    gasPrice: EthereumQuantity(quantity: 5.gwei),
-                    maxFeePerGas: EthereumQuantity(quantity: 21.gwei),
-                    maxPriorityFeePerGas: EthereumQuantity(quantity: 1.gwei),
-                    gasLimit: 3000000,
+                    gasPrice: EthereumQuantity(quantity: 1.gwei),
+                    maxFeePerGas: EthereumQuantity(quantity: 2.gwei),
+                    maxPriorityFeePerGas: EthereumQuantity(quantity: 2.gwei),
+                    gasLimit: 35000,
                     from: senderAddress,
                     value: 0,
                     accessList: [:],
@@ -77,7 +77,6 @@ struct EventMainMenuView: View {
             }.catch { error in
                 print(error)
             }
-            // Rest of your code goes here
             
         } catch {
             print("Error: \(error)")
