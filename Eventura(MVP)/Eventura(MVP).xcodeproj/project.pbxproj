@@ -132,10 +132,10 @@
 				DDDD729229DE618000907FD6 /* Assets.xcassets */,
 				DD9531AB29E0A9D900AD2D5C /* 3.png */,
 				DD8C3BEF29DFD7A000A15424 /* 1.png */,
-				DD9531AD29E0ACC900AD2D5C /* 2.png */,
 				DD9531AE29E0ACC900AD2D5C /* 4.png */,
-				DDDD729429DE618000907FD6 /* Preview Content */,
+				DD9531AD29E0ACC900AD2D5C /* 2.png */,
 				DDDD72BE29DE62A000907FD6 /* EventMenuView.swift */,
+				DDDD729429DE618000907FD6 /* Preview Content */,
 				DDDD72C629DE641900907FD6 /* User.swift */,
 				DDDD72C829DE643200907FD6 /* QRCodeScannerView.swift */,
 				DDDD72CC29DE64A400907FD6 /* KeychainService.swift */,
@@ -463,7 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(MVP)/Preview Content\"";
-				DEVELOPMENT_TEAM = 66P66L2U9P;
+				DEVELOPMENT_TEAM = VQVS27JHUP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Eventura;
@@ -481,7 +481,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.catchkg.Eventura-MVP-";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.enrui.Eventura-MVP-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -497,7 +497,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eventura(MVP)/Preview Content\"";
-				DEVELOPMENT_TEAM = 66P66L2U9P;
+				DEVELOPMENT_TEAM = VQVS27JHUP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Eventura;
@@ -515,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.catchkg.Eventura-MVP-";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.umich.enrui.Eventura-MVP-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

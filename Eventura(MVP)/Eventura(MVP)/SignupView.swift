@@ -1,6 +1,26 @@
 import SwiftUI
 import LocalAuthentication
 
+struct TextValidator: ViewModifier {
+    @Binding var text: String
+    
+    func body(content: Content) -> some View {
+        content
+            .onChange(of: text) { newValue in
+                let filtered = newValue.filter { $0.isLetter || $0.isNumber }
+                if filtered != newValue {
+                    text = filtered
+                }
+            }
+    }
+}
+
+extension View {
+    func validatedText(_ text: Binding<String>) -> some View {
+        self.modifier(TextValidator(text: text))
+    }
+}
+
 struct SignupView: View {
     
     @Binding var isLoggedIn: Bool
@@ -18,20 +38,31 @@ struct SignupView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .frame(height: 50)
+                .validatedText($publicKey)
+            
             
             TextField("Private Key", text: $privateKey)
                 .font(.system(size: 18, weight: .bold))
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .frame(height: 50)
+                .validatedText($privateKey)
             
             TextField("Wallet Address", text: $walletAddress)
                 .font(.system(size: 18, weight: .bold))
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .frame(height: 50)
+                .validatedText($walletAddress)
             
             Button(action: {
+                if publicKey.isEmpty || privateKey.isEmpty || walletAddress.isEmpty {
+                        let alert = UIAlertController(title: "Error", message: "Please make sure every field is not empty.", preferredStyle: .alert)
+                                 alert.addAction(UIAlertAction(title: "OK", style: .default))
+                        UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)
+                        return
+                    }
+        
                 let context = LAContext()
                 var error: NSError?
                 if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
