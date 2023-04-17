@@ -1,4 +1,4 @@
-# UM EECS441§3&4 W23 Teamname
+# UM EECS441§3&4 W23 SpencerRoll
 
 | Video  |  Wiki |  Trello  |
 |:-----:|:-----:|:--------:|
