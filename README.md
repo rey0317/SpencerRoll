@@ -8,6 +8,6 @@
 ![Team](/assets/team.png)
 
 [video_page]: https://youtu.be/sample
-[wiki_page]: https://github.com/member/team/wiki](https://github.com/rey0317/SpencerRoll
+[wiki_page]: https://github.com/rey0317/SpencerRoll
 [agile_page]: https://trello.com/b/sample/general
 
