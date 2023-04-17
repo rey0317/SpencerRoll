@@ -5,7 +5,7 @@
 |[<img src="https://eecs441.eecs.umich.edu/img/admin/video.png">][video_page]|[<img src="https://eecs441.eecs.umich.edu/img/admin/wiki.png">][wiki_page]|[<img src="https://eecs441.eecs.umich.edu/img/admin/trello.png">][agile_page]|
 
 ![Elevator Pitch](https://raw.githubusercontent.com/rey0317/SpencerRoll/main/.github/images/ElevatorPitch.png) <!-- MUST be placed in user-images.githubusercontent.com -->
-![Team](/assets/team.png)
+![Team](/assets/4.png)
 
 [video_page]: https://youtu.be/sample
 [wiki_page]: https://github.com/rey0317/SpencerRoll
