@@ -9,5 +9,5 @@
 
 [video_page]: https://youtu.be/sample
 [wiki_page]: https://github.com/rey0317/SpencerRoll
-[agile_page]: https://trello.com/b/sample/general
+[agile_page]: https://trello.com/b/q9V12Mgb/spencerroll
 
