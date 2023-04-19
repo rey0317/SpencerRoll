@@ -7,7 +7,7 @@
 ![Elevator Pitch](https://raw.githubusercontent.com/rey0317/SpencerRoll/main/.github/images/ElevatorPitch.png) <!-- MUST be placed in user-images.githubusercontent.com -->
 ![Team](/assets/Team.png)
 
-[video_page]: https://youtu.be/sample
+[video_page]: https://vimeo.com/818957525/0cd63c068a
 [wiki_page]: https://github.com/rey0317/SpencerRoll
 [agile_page]: https://trello.com/b/q9V12Mgb/spencerroll
 
